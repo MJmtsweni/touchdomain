@@ -1,0 +1,1024 @@
+/*****Mobile menu visibility rules*****/
+@media screen and (max-width: 1010px) {
+    .menu-btn {
+        visibility: visible;
+    }
+
+    header nav .nav-items {
+        visibility: hidden; 
+    } 
+
+    header nav .contact-info { 
+        visibility: hidden;  
+    }
+}
+
+@media screen and (min-width: 1011px) {
+    .menu-btn {
+        visibility: hidden;
+    }
+}
+
+/* Small Phones */
+@media screen and (max-width: 599px) {
+    /* Header */
+    .nav-container {
+        padding: 0;
+    }
+
+    nav {
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        height: 70px;
+        padding: 0px 16px;
+    }
+
+    .logo img {
+        width: 95px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .heading-text {
+        font-size: 1.2rem;
+    }
+
+    Header::after {
+        top: unset;
+        top:unset;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 35%;
+        background-image: url(../branding/hero-background-mobile.png);
+    }
+
+    .hero-slider {
+        top: 8%;
+        transform: none;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        width: 90vw;
+    }
+
+    .detail-box .heading-text {
+        width: 90vw;
+    }
+
+    .carousel-item {
+        height: calc(100vh - 70px);
+    }
+
+    .hero-slider .container {
+        height: calc(100vh - 70px);
+    }
+
+    .hero-slider .row {
+        padding: 0 0% 0 0;
+        height: 100%;
+        align-items: center;
+    }
+
+    .hero-slider .img-container {
+        justify-content: center;
+    }
+
+    .hero-slider .img-container .img-box {
+        width: 205px;
+    }
+
+    .number-box {
+        width: 32px;
+        top: 68%;
+        font-size: 17px;
+    }
+
+    .hero-slider .carousel-indicators {
+        bottom: 75px;
+    }
+
+    .hero-slider .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        background-color: #CCCCCC;
+    }
+
+    .detail-box p {
+        font-size: 16px;
+        margin: 4px 0 20px 5px;
+    }
+
+    /* Button */
+    .cta-primary {
+        font-size: 12px;
+    }
+
+    .cta-secondary {
+        font-size: 12px;
+    }
+
+    main section {
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    .intro {
+        font-size: 15px;
+        width: 93%;
+        margin-bottom: 5rem;
+    }
+
+    .intro-container {
+        flex-direction: column;
+        margin: 1rem 0 1rem 0;
+    }
+
+    .half-circle-top-right {
+        position: relative;
+        direction: rtl;
+        right: 0;
+        top: -50px;
+    }
+
+    .half-circle-top-right svg {
+        width: 21px;
+        height: 59px;
+    }
+
+    .half-circle-bottom-left {
+        position: relative;
+        bottom: 0%;
+        left: 0px;
+    }
+
+    .half-circle-bottom-left svg {
+        width: 21px;
+        height: 59px;
+    }
+
+    /* Block Quote */
+    .quotes {
+        padding: 0 20px;
+        margin-bottom: 1rem;
+    }
+
+    .block-quote {
+        margin-bottom: 20px;
+    }
+
+    .quotes div:nth-child(3) {
+        margin-bottom: 0;
+    }
+
+    .block-quote span {
+        font-size: 25px;
+        margin-right: 7px;
+    }
+
+    .block-quote blockquote {
+        border-left-width: 5px;
+        padding: 0 0px 0 16px;
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .block-quote .title {
+        font-size: 18px;
+        margin-left: -10px;
+        line-height: normal;
+    }
+
+    #about-intro .about {
+        width: 85%;
+    }
+
+    #about-intro .about nav {
+        box-shadow: none;
+        height: unset;
+        padding: 0;
+    }
+
+    .about .nav-tabs {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    .about .nav-tabs .nav-link.active, .about .nav-tabs .nav-item.show .nav-link {
+        font-size: 18px;
+    }
+
+    .about #myTabContent.tab-content {
+        margin-left: 1px;
+    }
+
+    .about #myTabContent.tab-content p {
+        margin-bottom: 9px;
+        font-size: 16px;
+    }
+
+   .why-us {
+        width: 78%;
+        height: fit-content;
+        padding: 15px;
+        margin: 10% 0 0;
+    }
+
+    .why-us h3 {
+        font-size: 18px;
+    }
+
+   .why-us-details .icon {
+        margin-left: 2px;
+        margin-right: 6px;
+    }
+
+    /* Testimonials */
+    #testimonials .intro-container {
+        margin-top: 0rem;
+        row-gap: 63px;
+    }
+
+    .testimonial {
+        width: 75%;
+        height: 350px;
+        margin-bottom: 0%;
+    }
+
+    .testimonial:last-child {
+        margin-bottom: -9%;
+    }
+
+    .info {
+        padding: 1rem 4px;
+    }
+
+    .comment {
+        padding: 1rem 4px;
+    }
+
+    .info .img {
+        top: -69%;
+        height: 90px;
+    }
+
+    .info .img img {
+        width: 103px;
+        height: 103px;
+    }
+
+    .service {
+        width: 83%;
+        height: fit-content;
+        box-shadow: 13px 13px var(--secondary-color);
+        padding: 15px;
+        margin-bottom: 37px;
+    }
+
+    .service .icon-service .fas {
+        font-size: 28px;
+        margin-right: -1px;
+    }
+
+    .service .icon-service .fa {
+        font-size: 27px;
+        margin-right: 1px;
+    }
+
+    .service .icon-service span {
+        font-size: 20px;
+    }
+
+    .service p {
+        margin-top: 16px;
+        font-size: 15px;
+    }
+
+    /* About Page */
+    #about-page .intro-container {
+        row-gap: 16px;
+    }
+
+    #about-page .intro-container .about {
+        width: 85%;
+    }
+
+    #about-page .about nav {
+        box-shadow: none !important;
+        padding: 0;
+    }
+
+    #about-page .about #myTabContent.tab-content {
+        padding: 0px 0 0 1px;
+    }
+
+    #about-page .why-us {
+        width: 87%;
+        height: fit-content;
+        padding: 15px;
+        margin: 5% 0 0;
+    }
+
+    #about-page .why-us h3 {
+        font-size: 18px;
+    }
+
+    #about-page .why-us-details .icon {
+        margin-left: 2px;
+        margin-right: 6px;
+    }
+
+    #about-page .explanation span {
+        font-size: 14px;
+    }
+
+    #about-page .explanation p {
+        font-size: 12px;
+    }
+
+    /******Portfolio Page****/
+    #work-page .portfolio {
+        width: 90%;
+        flex-direction: column;
+        row-gap: 3.3%;
+        align-items: center;
+    }
+
+    #work-page .portfolio-item {
+        width: 100%;
+    }
+
+    #work-page .portfolio-item img {
+        object-fit: fill;
+    }
+
+    /* Contact Form Snippet */
+
+    #contact-snippet .intro-container {
+        margin: -2rem 0 1rem 0;
+    }
+
+    /**** services page ****/
+    #services-page h4 {
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .brand-design {
+        flex-direction: column;
+        row-gap: o;
+    }
+
+    .brand-design .package {
+        margin-top: 3.5rem;
+    }
+
+    .brand-design .package:nth-child(3) {
+        height: 394px;
+    }
+
+    .web-design {
+        flex-direction: column;
+        row-gap: o;
+    }
+
+    .web-design .package {
+        width: 318px;
+        height: 412px;
+    }
+
+    .web-design .package:nth-child(3) {
+        height: 435px;
+    }
+
+    .digital-design {
+        flex-direction: column;
+        row-gap: o;
+    }
+
+    .digital-design .package:nth-child(3) {
+        height: 420px;
+    }
+
+    #services-page .intro-container {
+        margin-bottom: 4.8rem;
+    }
+
+    .package {
+        width: 318px;
+        height: 393px;
+        margin-top: 3.5rem;
+    }
+
+    .package .title {
+        font-size: 20px;
+    }
+
+    .package .price {
+        font-size: 22px;
+    }
+
+    .package ul li {
+        font-size: 14px;
+    }
+
+    .package .cta-secondary {
+        font-size: 14px;
+    }
+
+    form {
+        width: 92%;
+        padding: 16px;
+        margin-bottom: 30px;
+    }
+
+    form input, form textarea, form select, .form-control, .form-select {
+        font-size: 15px;
+    }
+
+    .contact-info-group {
+        width: 92%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        row-gap: 10px;
+    }
+
+    footer .brand {
+        order: 4;
+    }
+
+    footer img {
+        width: 50%;
+    }
+}
+
+/* Tabelts */
+@media screen and (max-width: 1010px) and (min-width: 599px) {
+    /* Header */
+    Header::after {
+        top: unset;
+        top:unset;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 35%;
+        background-image: url(../branding/hero-background-mobile.png);
+    }
+
+    .nav-container {
+        padding: 0;
+    }
+
+    nav {
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        height: 100px;
+        padding: 0px 16px;
+    }
+
+    .menu-mobile.show{
+        top: 7.8rem;
+    }
+
+    .logo img {
+        width: 170px;
+    }
+
+    .menu-btn .btn-line {
+        width: 51px;
+        height: 5px;
+        margin: 0 0 8px 0;
+    }
+
+    .menu-mobile li .nav-link {
+        font-size: 19px;
+    }
+
+    .hero-slider {
+        top: 8%;
+        transform: none;
+    }
+
+    .hero-slider .row {
+        height: 100vh;
+    }
+
+    .hero-slider .container {
+        max-width: 93% !important;
+    }
+
+    .hero-slider .carousel-indicators {
+        bottom: 2.5%;
+    }
+
+    .hero-slider .carousel-indicators li {
+        width: 12px;
+        height: 12px;
+        background-color: #CCCCCC;
+    }
+
+    .carousel-item {
+        height: calc(100vh - 80px);
+    }
+
+    h1 {
+        font-size: 3.2rem;
+        width: 100%;
+    }
+
+    .detail-box .heading-text {
+        width: 100%;
+        font-size: 2.2rem;
+    }
+
+    .detail-box p {
+        font-size: 20px;
+        margin: 0px 0 23px 5px;
+    }
+
+    .cta-primary {
+        font-size: 16px;
+        padding: 12px 15px;
+    }
+
+    .cta-secondary {
+        font-size: 18px;
+        padding: 12px 15px;
+    }
+
+    .hero-slider .row {
+        padding: 0 0% 0 0;
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .col-md-6 {
+        width: 100%;
+    }
+
+    .hero-slider .img-container {
+        justify-content: center;
+    }
+
+    .hero-slider .img-container .img-box {
+        width: 261px;
+    }
+
+    .number-box {
+        width: 44px;
+        top: 67%;
+        font-size: 21px;
+    }
+
+    .half-circle-top-right svg {
+        width: 30px;
+        height: 122px;
+    }
+
+    .half-circle-bottom-left svg {
+        width: 30px;
+        height: 122px;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+    }
+
+    .heading-text {
+        font-size: 2rem;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 1%;
+    }
+
+    .intro {
+        font-size: 21px;
+    }
+
+    .block-quote blockquote {
+        font-size: 18px;
+        width: 85%;
+    }
+
+    .block-quote .title {
+        font-size: 20px;
+    }
+
+    .intro-container {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    /* About Home Section */
+    #about-intro .intro-container .about {
+        width: 86%;
+    }
+
+    #about-intro .about nav {
+        box-shadow: none;
+        height: unset;
+        padding: 0;
+    }
+
+    .about .nav-link {
+        font-size: 20px;
+    }
+
+    .about .nav-tabs .nav-link.active, .about .nav-tabs .nav-item.show .nav-link {
+        font-size: 25px;
+    }
+
+    .about #myTabContent.tab-content {
+        margin-left: 1px;
+    }
+
+    .about #myTabContent.tab-content p {
+        margin-bottom: 9px;
+        font-size: 20px;
+    }
+
+    .why-us {
+        width: 80%;
+        height: fit-content;
+        padding: 28px;
+        margin: 10% 0 0;
+    }
+
+    .why-us h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .why-us-details .icon {
+        margin-left: 2px;
+        margin-right: 8px;
+    }
+
+    .why-us-details .icon i {
+        width: 49px;
+        height: 49px;
+        font-size: 22px;
+        padding: 12px;
+    }
+
+    .explanation span {
+        font-size: 18px;
+    }
+
+    .explanation p {
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+
+    /* Testimonails Home Section */
+    .testimonial {
+        width: 510px;
+        height: 580px;
+    }
+
+    .info .img {
+        width: 100%;
+        text-align: center;
+        top: -84%;
+    }
+
+    .info .img img {
+        width: 155px;
+        height: 155px;
+    }
+
+    .testimonial-details {
+        top: -47%;
+        margin-top: 14px;
+    }
+
+    .testimonial-details .name {
+        font-size: 25px;
+        margin-bottom: 3px;
+    }
+
+    .testimonial-details .title {
+        font-size: 18px;
+    }
+
+    .testimonial .networks i.fab {
+        font-size: 20px;
+    }
+
+    .comment q {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    /* Packages Home Section */
+    .service {
+        justify-content: space-evenly;
+        margin-bottom: 8%;
+        width: 500px;
+        height: 464px;
+    }
+
+    .service .icon-service i.fas {
+        font-size: 40px;
+        margin-right: 6px;
+    }
+
+    .service .icon-service .fa {
+        font-size: 37px;
+        margin-right: 6px;
+    }
+
+    .service p {
+        font-size: 20px;
+    }
+
+    .service .icon-service span {
+        font-size: 30px;
+    }
+
+    .service .buttons .cta-secondary {
+        margin-bottom: 20px;
+    }
+
+    /* Contact-snippet Section */
+    #contact-snippet form {
+        width: 80%;
+    }
+
+    #contact-snippet form label{
+        font-size: 16px;
+    }
+
+    #contact-snippet form input, form textarea, form select, .form-control, .form-select {
+        font-size: 18px;
+    }
+
+    #contact-snippet .contact-info-group {
+        width: 80%;
+        margin-top: 48px;
+        margin-bottom: 5%;
+    }
+
+    #contact-snippet .contact-info-b span {
+        font-size: 18px;
+    }
+
+    /***** About-intro ****/
+
+    #about-page .intro-container .about {
+        width: 86%;
+    }
+
+    #about-page .about nav {
+        box-shadow: none;
+        height: unset;
+        padding: 0;
+    }
+
+    #about-page .why-us {
+        width: 82%;
+        margin-top: 2%;
+    }
+
+    #about-page .why-us h3 {
+        font-size: 20px;
+    }
+
+    #about-page .why-us-details .icon {
+        margin-right: 11px;
+    }
+
+    #about-page .explanation span {
+        font-size: 18px;
+    }
+
+    #about-page .explanation p {
+        font-size: 16px;
+    }
+
+    /******Portfolio Page****/
+    #work-page .portfolio {
+        width: 70%;
+        flex-direction: column;
+        row-gap: 3.3%;
+        align-items: center;
+    }
+
+    #work-page .portfolio-item {
+        width: 100%;
+        height: 410px;
+    }
+
+    #work-page .portfolio-item img {
+        object-fit: fill;
+    }
+
+    /* Footer Section */
+    footer .brand {
+        width: 23%;
+    }
+
+    footer img {
+        width: 100%;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    footer h3 {
+        font-size: 20px;
+    }
+
+    footer div a {
+        font-size: 13px;
+    }
+
+
+
+
+
+    
+
+}
+
+/* Laptops */
+@media screen and (min-width: 1011px) and (max-width: 1141px) {
+    /* Header Section */
+    .nav-item a {
+        padding: 10px 6px;
+    }
+
+    i {
+        font-size: 14px;
+    }
+
+    header::after {
+        width: 43%;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+        width: 52vw;
+    }
+
+    .hero-slider .img-container .img-box {
+        width: 235px;
+    }
+
+    /* Typography */
+    h2 {
+        font-size: 2.8rem;
+    }
+
+    /* Reasons Home Section */
+    .block-quote blockquote {
+        width: 43%;
+    }
+
+    /* About Home Section */
+    .testimonial {
+        width: 30%;
+    }
+
+    .info .img img {
+        width: 118px;
+        height: 118px;
+    }
+
+    .info .img {
+        top: -70%;
+    }
+
+    .comment {
+        padding: 1.5rem 5px;
+    }
+
+    /* Service Home Section */
+    #services-intro .intro-container {
+        margin: 0rem 1rem 2rem 0rem;
+    }
+    
+    .service {
+        width: 30%;
+        height: fit-content;
+    }
+
+    /**** about page ****/
+    #about-page .intro-container .about {
+        width: 86%;
+    }
+
+    #about-page .why-us {
+        width: 56%;
+    }
+
+    /******Portfolio Page****/
+    #work-page .portfolio {
+        width: 96%;
+        row-gap: 2.3%;
+    }
+
+    #work-page .portfolio-item {
+        width: 100%;
+        height: 229px;
+    }
+
+    #work-page .portfolio-item img {
+        object-fit: fill;
+    }
+
+    
+}
+
+/* Large Screens */
+@media screen and (min-width: 1440px){
+    /* Header section */
+    .nav-container {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .logo img {
+        width: 145px;
+    }
+
+    .contact-info {
+        padding: 1.5%;
+    }
+
+    i {
+        padding: 11px;
+        font-size: 17px;
+    }
+
+    h1 {
+        font-size: 3.8rem;
+        width: 48vw;
+    }
+
+    .detail-box .heading-text {
+        width: 48vw;
+        font-size: 2.5rem;
+    }
+
+    .detail-box p {
+        width: 100%;
+        font-size: 20px;
+        line-height: 1.7;
+    }
+
+    .hero-slider .img-container .img-box {
+        width: 300px;
+    }
+
+    header::after {
+        width: 40%;
+    }
+
+    /* Typography */
+    .btn-box .cta-primary {
+        font-size: 18px;
+        padding: 12px 12px;
+    }
+
+    /**** about page ****/
+    #about-page .intro-container .about {
+        width: 72%;
+    }
+
+    #about-page .why-us {
+        width: 44%;
+    }
+
+    /******Portfolio Page****/
+    #work-page .portfolio {
+        width: 93%;
+        row-gap: 2.3%;
+    }
+
+    #work-page .portfolio-item {
+        width: 100%;
+        height: 368px;
+    }
+
+    #work-page .portfolio-item img {
+        object-fit: fill;
+    }
+
+    
+
+
+
+
+}

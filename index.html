@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touch Domain - Custom Web Design & Development</title>
+    <!-- fonts style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!--Main CSS Stylesheet-->
+    <link rel="stylesheet" href="./css/main.css">
+    <!--Header CSS Stylesheet-->
+    <link rel="stylesheet" href="./css/header.css">
+    <!--Components CSS Stylesheet-->
+    <link rel="stylesheet" href="./css/components.css">
+    <!--Mobile Responsiveness CSS Stylesheet-->
+    <link rel="stylesheet" href="./css/responsiveness.css">
+    <!--Fontawesome icons-->
+    <script src="https://kit.fontawesome.com/76e3c9c22e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="./branding/logo-nav.png" alt="" srcset="">
+            </a>
+            <ul class="nav-items">
+                <li class="nav-item active">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./work.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./contact.html">Reach Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./quote.html" class="cta-primary">Get a Quote</a>
+                </li>
+            </ul>
+            <div class="contact-info">
+                <div class="social-icons">
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="mailto:">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+                
+            </div>
+            <!--Mobile menu button-->
+            <div class="menu-btn">
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+            </div>
+            <!--Mobile navigation-->
+            <ul class="menu-mobile">
+                <li>
+                    <a href="./index.html" class="nav-link"><span class="current">Home</span></a>
+                </li>
+                <li>
+                    <a href="./about.html" class="nav-link">Aout us</a>
+                </li>
+                <li>
+                    <a href="./services.html" class="nav-link">Services</a>
+                </li>
+                <li>
+                    <a href="./work.html" class="nav-link">Portfolio</a>
+                </li>
+                <li>
+                    <a href="./contact.html" class="nav-link">Reach Us</a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+        <section class="hero">
+            <div class="hero-slider">
+                <div class="container">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div id="carouselExampleIndicators" class="carousel slide">
+                            <ol class="carousel-indicators">
+                              <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+                              <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></li>
+                              <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <!--Slide 1-->
+                                <div class="carousel-item active" data-bs-interval="10000">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="detail-box">
+                                                <h1>
+                                                    Captivate Your Audience
+                                                </h1>
+                                                <span class="heading-text">
+                                                    With Stunning Web Designs
+                                                </span>
+                                                <p>
+                                                    Engage your audience with visually striking websites that reflect your brand and captivate 
+                                                    visitors from the start. With our expert web design services, we combine creativity and functionality 
+                                                    to create a unique online presence that stands out.
+                                                </p>
+                                                <div class="btn-box">
+                                                    <a href="" class="cta-primary">
+                                                        Book Free Consualtation
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 img-container">
+                                            <div class="img-box">
+                                                <img src="./branding/slider-img1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="number-box">
+                                            <div class="carousel-indicators indicator-2">
+                                                <span>01</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Slide 2-->
+                                <div class="carousel-item" data-bs-interval="10000">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="detail-box">
+                                                <h1>
+                                                    Transform Ideas into
+                                                </h1>
+                                                <span class="heading-text">
+                                                    User-Friendly Websites
+                                                </span>
+                                                <p>
+                                                    Turn your ideas into reality with our web development services. We build functional and 
+                                                    user-friendly websites using the latest technologies and best practices. From responsive 
+                                                    design to e-commerce integration, we bring your website to life.
+                                                </p>
+                                                <div class="btn-box">
+                                                    <a href="" class="cta-primary">
+                                                        Book Free Consualtation
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 img-container">
+                                            <div class="img-box">
+                                                <img src="./branding/slider-img2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="number-box">
+                                            <div class="carousel-indicators indicator-2">
+                                                <span>02</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Slide 3-->
+                                <div class="carousel-item" data-bs-interval="10000">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="detail-box">
+                                                <h1>
+                                                    Elevate Your Brand
+                                                </h1>
+                                                <span class="heading-text">
+                                                    With Compelling Designs
+                                                </span>
+                                                <p>
+                                                    Make a lasting impression with impactful visuals. Our graphic design services create  
+                                                    stunning logos, banners, and social media graphics. Whether you need a brand overhaul or  
+                                                    design tweaks, we'll deliver designs that capture your brand's personality.
+                                                </p>
+                                                <div class="btn-box">
+                                                    <a href="" class="cta-primary">
+                                                        Book Free Consualtation
+                                                    </a>
+                                                </div>
+                                            </div>
+                                         </div>
+                                        <div class="col-md-6 img-container">
+                                            <div class="img-box">
+                                                <img src="./branding/slider-img3.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="number-box">
+                                            <div class="carousel-indicators indicator-2">
+                                                <span>03</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- end slider section -->
+    <!--Main home content-->
+    <main>
+        <section id="reasons">            
+            <h2>Join the WWW</h2>
+            <h3 class="heading-text">Here are three reasons why</h3>
+            <p class="intro">
+                The internet is more than just websites, it's a community.  Here are three reasons why you 
+                should join us and become part of something bigger.
+            </p>
+            <div class="half-circle-top-right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="126.009" height="339.082" viewBox="0 0 126.009 339.082">
+                    <path id="Path_829" data-name="Path 829" d="M1961.612,1338c-112.265,34.42-137.328,131.025-121.864,194.005,22.023,89.7,121.864,145.076,121.864,145.076V1338" transform="translate(-1835.603 -1338)" fill="#452c63"/>
+                </svg>
+            </div>
+            <div class="quotes">
+                <div class="block-quote">
+                    <span>1</span>
+                    <blockquote>
+                        <span class="title">Don't Just Look Credible, Be Credible</span>
+                        A professional website is essential in today's digital world. It's your online storefront, instantly boosting credibility and showing 
+                        clients you're the real deal. Clear, quality information builds trust and positions you as the expert.
+                    </blockquote>
+                </div>
+                <div class="block-quote">
+                    <span>2</span>
+                    <blockquote>    
+                        <span class="title">Shout It From the Rooftops</span>
+                        Your brand is your business's core, and your website is its perfect showcase. Tell your story, share your values, and highlight your 
+                        unique qualities. A strong online presence solidifies your brand, differentiates you from competitors, and provides a crucial advantage.
+                    </blockquote>
+                </div>
+                <div class="block-quote">                
+                    <span>3</span>
+                    <blockquote>
+                        <span class="title">Catch Those Leads While They're Hot!</span>
+                        A website acts like a magnet for potential customers.  Interested parties will visit your site, so make it easy for them to find contact info, 
+                        location, and product/service details. A well-designed website converts interest into valuable, nurture-ready leads.
+                    </blockquote>
+                </div>
+            </div>
+            <div class="half-circle-bottom-left">
+                <svg xmlns="http://www.w3.org/2000/svg" width="126.009" height="339.082" viewBox="0 0 126.009 339.082">
+                    <path id="Path_830" data-name="Path 830" d="M1961.612,1338c-112.265,34.42-137.328,131.025-121.864,194.005,22.023,89.7,121.864,145.076,121.864,145.076V1338" transform="translate(1961.612 1677.082) rotate(180)" fill="#9972ab"/>
+                </svg>
+            </div>   
+        </section>
+        <section id="about-intro">
+            <h2>Elevate Your Brand with Touch Domain</h2>
+            <h3 class="heading-text">A Strategic Process for Lasting Impact</h3>
+            <p class="intro">
+                Touch Domain helps brands thrive. Our proven process builds brands that stand out and deliver. 
+                We're passionate about client goals and committed to their success.
+            </p>
+            <div class="half-circle-top-right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="126.009" height="339.082" viewBox="0 0 126.009 339.082">
+                    <path id="Path_829" data-name="Path 829" d="M1961.612,1338c-112.265,34.42-137.328,131.025-121.864,194.005,22.023,89.7,121.864,145.076,121.864,145.076V1338" transform="translate(-1835.603 -1338)" fill="#452c63"/>
+                </svg>
+            </div>
+
+            <div class="intro-container">
+                <div class="about">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-mission-tab" data-bs-toggle="tab" data-bs-target="#mission-tab" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                                Mission
+                            </button>
+                            <button class="nav-link" id="nav-vision-tab" data-bs-toggle="tab" data-bs-target="#vision-tab" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                                Vision
+                            </button>
+                            <button class="nav-link" id="nav-values-tab" data-bs-toggle="tab" data-bs-target="#values-tab" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                                Values
+                            </button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="mission-tab" role="tabpanel" aria-labelledby="nav-mission-tab">
+                           <p>
+                                We strive to be recognized for delivering exceptionally user-friendly and effective web solutions.
+                                Through meticulous and innovative web development, we build impactful digital experiences that forge 
+                                lasting brand connections and drive measurable success for our clients. Guided by our core values of 
+                                innovation, integrity, and client-centric collaboration.
+                            </p> 
+                            <p>
+                                We believe every business deserves digital success. We bridge the gap between potential and reality by 
+                                providing modern marketing and technology solutions that deliver tangible results.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="vision-tab" role="tabpanel" aria-labelledby="nav-vision-tab">
+                            <p>
+                                To empower businesses with cutting-edge web development solutions that unlock their full potential, 
+                                elevate their brand presence, and drive sustained growth, in the digital landscape.
+                             </p> 
+                             <p>
+                                We envision businesses achieving unprecedented digital growth through our cutting-edge web solutions. 
+                                We empower clients to lead in their industries, providing the tools and strategies to thrive in the dynamic 
+                                digital landscape.
+                             </p>
+                         </div>
+                         <div class="tab-pane fade" id="values-tab" role="tabpanel" aria-labelledby="nav-values-tab">
+                            <h5>
+                                <div class="circle">
+                                    <span>1</span>
+                                </div>
+                                Client-Centric Collaboration
+                            </h5>
+                            <p>We believe in building strong, collaborative partnerships with our clients.</p>
+                            <h5>
+                                <div class="circle">
+                                    <span>2</span>
+                                </div>
+                                Innovation
+                            </h5>
+                            <p>We embrace a culture of continuous innovation, constantly seeking new and creative ways to solve problems and improve our services.</p>
+                            <h5>
+                                <div class="circle">
+                                    <span>3</span>
+                                </div>
+                                Integrity 
+                            </h5>
+                            <p>We conduct our business with the highest ethical standards, demonstrating honesty, transparency, and fairness in all our interactions.</p>
+                            <h5>
+                                <div class="circle">
+                                    <span>4</span>
+                                </div>
+                                Continuous Learning
+                            </h5>
+                            <p>We are dedicated to ongoing learning and development, recognizing that the digital landscape is constantly evolving.</p>
+                            <h5>
+                                <div class="circle">
+                                    <span>6</span>
+                                </div>
+                                Accountability
+                            </h5>
+                            <p>We take ownership of our work and are accountable for our actions</p>
+                         </div>
+                    </div>
+                </div>
+                <div class="why-us">
+                    <h3>Our Designs Are</h3>
+                    <div class="why-us-details">
+                        <div class="icon">
+                            <i class="fa fa-street-view" aria-hidden="true"></i>
+                        </div>
+                        <div class="explanation">
+                            <span>Brand Conscious</span>
+                            <p>
+                                Our website designs are based on your brand strategy to ensure
+                                that your target audience can easily identify with you.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="why-us-details">
+                        <div class="icon">
+                            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="explanation">
+                            <span>Intuitive</span>
+                            <p>
+                                We customise the user experience on your website 
+                                based on findings from our target audience research.
+                                Giving you more conversions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="why-us-details">
+                        <div class="icon">
+                            <i class="fa fa-laptop" aria-hidden="true"></i>
+                        </div>
+                        <div class="explanation">
+                            <span>Responsive</span>
+                            <p>
+                                We ensure that your website is accessible across multiple devices.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="half-circle-bottom-left">
+                <svg xmlns="http://www.w3.org/2000/svg" width="126.009" height="339.082" viewBox="0 0 126.009 339.082">
+                    <path id="Path_830" data-name="Path 830" d="M1961.612,1338c-112.265,34.42-137.328,131.025-121.864,194.005,22.023,89.7,121.864,145.076,121.864,145.076V1338" transform="translate(1961.612 1677.082) rotate(180)" fill="#9972ab"/>
+                </svg>
+            </div>
+        </section>
+        <section id="testimonials">
+            <h2>Our Clients' Experiences</h2>
+            <h3 class="heading-text">Genuine Reviews and Stories</h3>
+            <p class="intro">
+                See the impact we've made on businesses and individuals alike. Browse our customer reviews 
+                and discover their success stories.
+            </p>
+            <div class="half-circle-top-right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="126.009" height="339.082" viewBox="0 0 126.009 339.082">
+                    <path id="Path_829" data-name="Path 829" d="M1961.612,1338c-112.265,34.42-137.328,131.025-121.864,194.005,22.023,89.7,121.864,145.076,121.864,145.076V1338" transform="translate(-1835.603 -1338)" fill="#452c63"/>
+                </svg>
+            </div>
+            <div class="intro-container">
+                <div class="testimonial">
+                    <div class="info">
+                        <div class="img">
+                            <img src="./branding/DisplayPic.jpg" alt="" srcset="">
+                        </div>
+                        <div class="testimonial-details">
+                            <span class="name">"Thabo Mtsweni"</span>
+                            <span class="title">White Lines, Co-founder</span>
+                            <div class="networks">
+                                <i class="fab fa-facebook-square"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-linkedin-in"></i>
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <q>
+                            Not only did Touch Media deliver on what they promised 
+                            but they exceeded my expectation. My friends are even 
+                            asking who made the website for me.
+                        </q>
+                        <a href="" class="cta-secondary">
+                            View Project
+                        </a>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="info">
+                        <div class="img">
+                            <img src="./branding/DisplayPic.jpg" alt="" srcset="">
+                        </div>
+                        <div class="testimonial-details">
+                            <span class="name">"Thabo Mtsweni"</span>
+                            <span class="title">White Lines, Co-founder</span>
+                            <div class="networks">
+                                <i class="fab fa-facebook-square"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-linkedin-in"></i>
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <q>
+                            Not only did Touch Media deliver on what they promised 
+                            but they exceeded my expectation. My friends are even 
+                            asking who made the website for me.
+                        </q>
+                        <a href="" class="cta-secondary">
+                            View Project
+                        </a>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="info">
+                        <div class="img">
+                            <img src="./branding/DisplayPic.jpg" alt="" srcset="">
+                        </div>
+                        <div class="testimonial-details">
+                            <span class="name">"Thabo Mtsweni"</span>
+                            <span class="title">White Lines, Co-founder</span>
+                            <div class="networks">
+                                <i class="fab fa-facebook-square"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-linkedin-in"></i>
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <q>
+                            Not only did Touch Media deliver on what they promised 
+                            but they exceeded my expectation. My friends are even 
+                            asking who made the website for me.
+                        </q>
+                        <a href="" class="cta-secondary">
+                            View Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="half-circle-bottom-left">
+                <svg xmlns="http://www.w3.org/2000/svg" width="126.009" height="339.082" viewBox="0 0 126.009 339.082">
+                    <path id="Path_830" data-name="Path 830" d="M1961.612,1338c-112.265,34.42-137.328,131.025-121.864,194.005,22.023,89.7,121.864,145.076,121.864,145.076V1338" transform="translate(1961.612 1677.082) rotate(180)" fill="#9972ab"/>
+                </svg>
+            </div>
+        </section>
+        <section id="services-intro">
+            <h2>From an Idea to Online Creation</h2>
+            <h3 class="heading-text">Choose a Package or Fully Customize Your Solution</h3>
+            <p class="intro">
+                Our expert team turns your innovative concepts into impactful online realities.
+                Choose a package for efficiency, or let us build a custom solution for exceptional results.
+            </p>
+            <div class="half-circle-top-right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="126.009" height="339.082" viewBox="0 0 126.009 339.082">
+                    <path id="Path_829" data-name="Path 829" d="M1961.612,1338c-112.265,34.42-137.328,131.025-121.864,194.005,22.023,89.7,121.864,145.076,121.864,145.076V1338" transform="translate(-1835.603 -1338)" fill="#452c63"/>
+                </svg>
+            </div>
+            <div class="intro-container">
+                <div class="service">
+                    <div class="icon-service">
+                        <i class="fas fa-fingerprint"></i>
+                        <span>Branding</span>
+                    </div>
+                    <p>
+                        In branding, we focus on breeding a solid, and positive perception of your company, 
+                        and it's products in your customer's mind. Sharing your unique story
+                        and differentiating you from your competitors.
+                    </p>
+                    <div class="buttons">
+                        <a href="" class="cta-secondary">
+                            Packages
+                        </a>
+                        <a href="" class="cta-secondary">
+                            Customise Package
+                        </a>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="icon-service">
+                        <i class="fa fa-desktop" aria-hidden="true"></i>
+                        <span>Web Design</span>
+                    </div>
+                    <p>
+                        In web design, we focus on organising 
+                        content layout in a cohesive manner 
+                        that feeds your customer's attention. 
+                        With our objective being: to control how
+                        your brand is perceived by your customers.
+                    </p>
+                    <div class="buttons">
+                        <a href="" class="cta-secondary">
+                            Packages
+                        </a>
+                        <a href="" class="cta-secondary">
+                            Customise Package
+                        </a>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="icon-service">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                        <span>Graphic Design</span>
+                    </div>
+                    <p>
+                        In graphic design, we focus on 
+                        communicating and promoting your 
+                        company's products or services in a 
+                        visually appealing way that to your 
+                        company's brand identity.
+                    </p>
+                    <div class="buttons">
+                        <a href="" class="cta-secondary">
+                            Packages
+                        </a>
+                        <a href="" class="cta-secondary">
+                            Customise Package
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="half-circle-bottom-left">
+                <svg xmlns="http://www.w3.org/2000/svg" width="126.009" height="339.082" viewBox="0 0 126.009 339.082">
+                    <path id="Path_830" data-name="Path 830" d="M1961.612,1338c-112.265,34.42-137.328,131.025-121.864,194.005,22.023,89.7,121.864,145.076,121.864,145.076V1338" transform="translate(1961.612 1677.082) rotate(180)" fill="#9972ab"/>
+                </svg>
+            </div>
+        </section>
+        <section id="contact-snippet">
+            <h2>Let's Connect</h2>
+            <h3 class="heading-text">We're Here to Help</h3>
+            <p class="intro">
+                We're here to answer questions and provide support. Let us know how we can help, explore our contact options.
+            </p>
+            <div class="half-circle-top-right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="126.009" height="339.082" viewBox="0 0 126.009 339.082">
+                    <path id="Path_829" data-name="Path 829" d="M1961.612,1338c-112.265,34.42-137.328,131.025-121.864,194.005,22.023,89.7,121.864,145.076,121.864,145.076V1338" transform="translate(-1835.603 -1338)" fill="#452c63"/>
+                </svg>
+            </div>
+
+            <div class="intro-container">
+                <form action="https://api.web3forms.com/submit" method="post" id="contactForm">
+                    <input type="hidden" name="access_key" value="22c813bd-df99-4718-9c87-9ca21bcebbd0">
+                    <div class="field-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="field-group">
+                        <label for="floatingSelect">Your Subject</label>
+                        <select class="form-select" id="subject" name="topic" required>
+                          <option selected>Select your subject</option>
+                          <option value="General enquiry">General enquiry</option>
+                          <option value="Feedback">Feedback</option>
+                          <option value="Reporting a bug">Reporting a bug</option>
+                        </select>
+                    </div>
+                    <div class="field-group">
+                        <label for="floatingInput">Email address</label>
+                        <input type="email" class="form-control" id="floatingInput email" name="email" placeholder="name@example.com" required>
+                    </div>
+                    <div class="field-group">
+                        <label for="floatingTextarea">Your Message</label>
+                        <textarea class="form-control" name="message" placeholder="Type your message" id="floatingTextarea message" required></textarea>
+                    </div>
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                    <button type="submit" class="cta-primary">
+                        Send Message
+                    </button>
+                    <div id="result"></div>
+                </form>
+
+                <div class="contact-info-group">
+                    <div class="text">
+                      <p>Would you like a free consultation to see </b>
+                        if we are a fit for you or anything you want clearifty </b>
+                        feel free to send us a message!
+                    </p>
+                    </div>
+                    <div class="contact-info-b">
+                      <span><i class="fa fa-whatsapp" aria-hidden="true"></i> 081234568</span>
+                      <span><i  class="fa fa-phone" aria-hidden="true"></i> 081234568</span>
+                      <span><i class="fa fa-envelope"></i> info@touchdomain.co.za</span>
+                    </div>
+                  </div>
+            </div>
+            <div class="half-circle-bottom-left">
+                <svg xmlns="http://www.w3.org/2000/svg" width="126.009" height="339.082" viewBox="0 0 126.009 339.082">
+                    <path id="Path_830" data-name="Path 830" d="M1961.612,1338c-112.265,34.42-137.328,131.025-121.864,194.005,22.023,89.7,121.864,145.076,121.864,145.076V1338" transform="translate(1961.612 1677.082) rotate(180)" fill="#9972ab"/>
+                </svg>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="brand">
+            <a href="http://" target="_parent" rel="noopener noreferrer">
+                <img src="./branding/brand.png" alt="" srcset="">
+            </a>
+            <p>&copy; 2025. Touch Domain, All Rights Reserved.</p>
+        </div>
+        <div class="links">
+            <h3>Links</h3>
+            <a href="./about.html">About</a>
+            <a href="./services.html">Services</a>
+            <a href="./work.html">Portfolio</a>
+            <a href="./contact.html">Reach Us</a>
+            <a href="">Sitemap</a>
+        </div>
+        <div class="footer-info">
+            <h3>information</h3>
+            <a href="">Terms & conditions</a>
+            <a href="">Private policy</a>
+        </div>
+        <div class="social">
+            <h3>Social Media</h3>
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook-square"></i>
+                Touch Domain
+            </a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+                Touch domain
+            </a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin-in"></i>
+                Touch domain
+            </a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-x-twitter"></i>
+                Touch domain
+            </a> 
+          </div>
+        <div class="reach">
+            <h3>Reach Us</h3>
+            <a href="mailto:tmtsweni@hotmail.com">info@mail.com</a>
+            <a href="tel:+27813276153">0813276153</a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!--Toggle Menu Script-->
+    <script src="./js/toggle-menu.js"></script>
+</body>
+</html>

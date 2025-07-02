@@ -1,0 +1,245 @@
+@import url("colors.css");
+
+/*header*/
+header {
+    display: block;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background-image: url(../branding/hero-background.png);
+    background-size: cover;
+}
+
+/*Navigation*/
+.nav-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 0px;
+    z-index: 99999;
+    width: 100%;
+    height: 80px;
+}
+
+.logo {
+    margin: 1% 1% 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 125px;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5% 0 0 0;
+    margin: 0;
+}
+
+.nav-item a {
+    display: block;
+    padding: 10px 10px;
+    color: #707070;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.active a, .nav-item a:hover {
+    color: var(--secondary-color);
+}
+
+.nav-item .cta-primary {
+    margin-left: 8px;
+}
+
+.contact-info {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    padding-top: 2%;
+    display: flex;
+    align-items: center;
+    gap: 96px;
+}
+
+.contact-info a[href^="mailto:"] {
+    display: flex;
+    flex-direction: row;
+    margin-right: 11px;
+    align-items: center;
+    color: #fff;
+}
+
+.contact-info a[href^="mailto:"] i {
+    margin-right: 6px;
+}
+
+.contact-info a[href^="mailto:"]:hover {
+    && i {
+        background-color: #fff;
+        color: var(--primary-color);
+    }
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+/*Hero section*/
+.hero-slider {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    justify-content: center;
+}
+
+.number-box {
+    width: 40px;
+    position: absolute;
+    color: #fff;
+    right: 0%;
+    top: 46%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-50%);
+    z-index: 1;
+    font-size: 22px;
+}
+
+.number-box::before {
+    content: "";
+    width: 40px;
+    height: 1px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-slider .container {
+    max-width: 93% !important;
+    padding: 0;
+}
+
+.hero-slider .row {
+    padding: 0 8% 0 0;
+}
+
+.hero-slider .carousel-indicators {
+    right: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    bottom: -56%;
+    list-style: none;
+}
+
+.hero-slider .carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    opacity: 1;
+    border: none;
+    background-clip: unset;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-clip: padding-box;
+
+}
+
+.hero-slider .carousel-indicators li.active {
+    background-color: var(--secondary-color);
+}
+
+.hero-slider .carousel-indicators.indicator-2 {
+    position: unset;
+}
+  
+.hero-slider .carousel-indicators.indicator-2 span {
+    width: 25px;
+    height: 25px;
+    text-indent: 0px;
+    text-align: center;
+    line-height: 25px;
+    color: #ffffff;
+    margin: 0;
+    background-color: transparent;
+    opacity: 1;
+    border: none;
+}
+  
+.hero-slider ol.carousel-indicators.active {
+    display: block;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 3rem;
+    text-transform: uppercase;
+    width: 67vw;
+    font-weight: 800;
+    margin: 0 0 1px 5px;
+}
+
+.detail-box .heading-text {
+    width: 67vw;
+    text-align: left;
+    margin: 0 0 0.5rem 5px;
+}
+
+.detail-box p {
+    margin: 4px 0 1.1rem 5px;
+    font-size: 17px;
+}
+
+.hero-slider .img-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+  
+.hero-slider .img-container .img-box {
+    width: 250px;
+}
+  
+.hero-slider .img-container .img-box img {
+    width: 100%;
+}
+
+
+
+
+

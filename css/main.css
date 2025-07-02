@@ -1,0 +1,371 @@
+@import url(./colors.css);
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a, a:hover, a:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.heading-text {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--secondary-color);
+    display: block;
+    text-align: center;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.intro {
+    font-size: 21px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10rem;
+}
+
+
+main {
+    position: relative;
+    padding: 2rem 0;
+    margin: 1.5rem 0;
+}
+
+main section {
+    position: relative;
+    margin-bottom: 1rem;
+    padding-bottom: 7rem;
+}
+
+/*****Home Page*****/
+
+.quotes {
+    padding: 0 42px;
+}
+
+.half-circle-top-right {
+    position: absolute;
+    top: 11%;
+    right: 0;
+}
+
+.half-circle-top-right svg {
+    width: 33px;
+    height: 91px;;
+}
+
+.half-circle-bottom-left{
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+}
+
+.half-circle-bottom-left svg {
+    width: 33px;
+    height: 91px;
+}
+
+/*****About-intro Home Page*****/
+.intro-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5rem 2rem 6rem 2rem;
+}
+
+#about-intro .about {
+    width: 60%;
+}
+
+.why-us {
+    width: 385px;
+    height: 300px;
+    background-color: var(--primary-color);
+    border-radius: 3%;
+    color: #fff;
+    padding: 13px;
+    margin-left: 2rem;
+}
+
+.why-us h3 {
+    font-size: 20px;
+}
+
+.why-us-details {
+    display: flex;
+    flex-direction: row;
+}
+
+.why-us-details .icon {
+    margin-left: 5px;
+    margin-right: 8px;
+}
+
+.why-us-details .icon i {
+    width: 38px;
+    height: 38px;
+    font-size: 17px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    padding: 9px;
+    text-align: center;
+}
+
+.explanation span {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.explanation p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/*****Testimonials Home Page*****/
+#testimonials .intro-container {
+    justify-content: space-evenly;
+    padding: 0;
+    margin-top: 14rem;
+}
+
+/*****Services Home Page*****/
+#services-intro .intro-container {
+    justify-content: space-evenly;
+    padding: 0;
+    margin-top: 0;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    color: #fff;
+    width: 330px;
+    height: 340px;
+    background-color: var(--primary-color);
+    box-shadow: 18px 18px var(--secondary-color);
+    padding: 17px;
+    border-radius: 6%;
+}
+
+.service .icon-service {
+    text-align: center;
+}
+
+.service .icon-service span {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.service .icon-service i.fas {
+    background-color: transparent;
+}
+
+.service .icon-service i.fa {
+    background-color: transparent;
+}
+
+.service .icon-service .fas {
+    font-size: 30px;
+    margin-right: 12px;
+}
+
+.service .icon-service .fa {
+    font-size: 29px;
+    margin-right: 12px;
+}
+
+.service p {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 16px;
+}
+
+.service .buttons {
+    position: relative;
+    bottom: -4%;
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+.service .buttons .cta-secondary {
+    display: block;
+    width: 60%;
+    margin-bottom: 8px;
+    text-align: center;
+    padding: 8px 8px;
+}
+
+/*****Contact Home Page*****/
+.contact-info-group {
+    width: 35%;
+}
+
+#contact-snippet .text p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#contact-snippet .contact-info-b span {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#contact-snippet .contact-info-b span:hover {
+    cursor: pointer;
+    color: gray;
+}
+
+#contact-snippet .contact-info-b span:hover i {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+}
+
+#contact-snippet .contact-info-b span i {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 13px;
+    padding: 8px;
+    border-radius: 50%;
+    margin-top: 8px;
+    margin-right: 5px;
+}
+
+#contact-snippet .contact-info-b span i.fa.fa-whatsapp {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/**** About Page*****/
+#about-page .intro-container {
+    flex-direction: column;
+    row-gap: 68px;
+    margin-top: 0;
+}
+
+#about-page .intro-container .about {
+    width: 70%;
+}
+
+#about-page .about #myTabContent.tab-content {
+    border-bottom: 0.5px solid var(--secondary-color);
+}
+
+#about-page .why-us {
+    width: 44%;
+    height: fit-content;
+    padding: 30px;
+    margin-left: 0;
+}
+
+#about-page .why-us h3 {
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+}
+
+#about-page .why-us-details .icon {
+    margin-left: 10px;
+    margin-right: 13px;
+}
+
+#about-page .explanation span {
+    font-size: 18px;
+}
+
+#about-page .explanation p{
+    font-size: 16px;
+}
+#services-page i {
+    background-color: transparent;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    margin-right: 2px;
+}
+
+#services-page i:hover {
+    color: var(--secondary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 1.5rem;
+    padding-bottom: 0.8rem;
+}
+
+footer img {
+    width: 80%;
+}
+
+footer .brand p {
+    margin-top: 15px;
+}
+
+footer p {
+    color: #fff;
+}
+
+footer h3 {
+    color: #fff;
+}
+
+footer div a {
+    display: block;
+    color: #fff;
+}
+
+footer div a:hover {
+    color: var(--secondary-color);
+}
+
+footer i {
+    color: #fff;
+    background-color: transparent;
+    padding: 5px;
+}
+
+
