@@ -37,17 +37,11 @@
     }
 
     h2 {
-        font-size: 1.6rem;
-        width: 92%;
-        margin-right: auto;
-        margin-left: auto;
+        font-size: 1.8rem;
     }
 
     .heading-text {
         font-size: 1.2rem;
-        width: 92%;
-        margin-right: auto;
-        margin-left: auto;
     }
 
     Header::after {
@@ -103,7 +97,7 @@
     }
 
     .hero-slider .carousel-indicators {
-        bottom: 50px;
+        bottom: 75px;
     }
 
     .hero-slider .carousel-indicators li {
@@ -348,13 +342,12 @@
     #work-page .portfolio {
         width: 90%;
         flex-direction: column;
-        row-gap: 0;
+        row-gap: 3.3%;
         align-items: center;
     }
 
     #work-page .portfolio-item {
         width: 100%;
-        margin-bottom: 2.5rem;
     }
 
     #work-page .portfolio-item img {
@@ -561,20 +554,16 @@
 
     .hero-slider .row {
         padding: 0 0% 0 0;
-        height: calc(100vh - 92px);
+        height: 100vh;
         align-items: center;
         flex-direction: column;
         flex-wrap: nowrap;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .col-md-6 {
         width: 100%;
-    }
-
-    .detail-box {
-        margin-top: 10%;
     }
 
     .hero-slider .img-container {
@@ -583,7 +572,6 @@
 
     .hero-slider .img-container .img-box {
         width: 261px;
-        margin-bottom: 6%;
     }
 
     .number-box {
@@ -603,10 +591,7 @@
     }
 
     h2 {
-        font-size: 2.5rem;
-        width: 92%;
-        margin-left: auto;
-        margin-right: auto;
+        font-size: 2.8rem;
     }
 
     .heading-text {
@@ -618,7 +603,6 @@
 
     .intro {
         font-size: 21px;
-        width: 90%;
     }
 
     .block-quote blockquote {
@@ -839,100 +823,6 @@
         object-fit: fill;
     }
 
-    /**** services page ****/
-    #services-page .half-circle-top-right {
-        top: 4%;
-    }
-
-    #services-page h4 {
-        width: 100%;
-        text-align: center;
-        font-size: 2rem;
-        top: -22px;
-    }
-
-    .brand-design {
-        flex-direction: column;
-        row-gap: o;
-    }
-
-    .brand-design .package {
-        margin-top: 3.5rem;
-    }
-
-    .brand-design .package:nth-child(3) {
-        height: 549px;
-    }
-
-    .web-design {
-        flex-direction: column;
-        row-gap: o;
-        margin-top: 3rem;
-    }
-
-    .web-design .package {
-        width: 460px;
-        height: 568px;
-    }
-
-    .web-design .package:nth-child(3) {
-        height: 611px;
-    }
-
-    .digital-design {
-        flex-direction: column;
-        row-gap: o;
-        margin-top: 3rem;
-    }
-
-    .digital-design .package:nth-child(3) {
-        height: 572px;
-    }
-
-    #services-page .intro-container {
-        margin-bottom: 4.8rem;
-    }
-
-    .package {
-        width: 460px;
-        height: 543px;
-        margin-top: 3.5rem;
-    }
-
-    .package .title {
-        font-size: 25px;
-        margin-top: 15px;
-    }
-
-    .package .price {
-        font-size: 28px;
-        padding: 8px 41px;
-        margin: 20px 0;
-    }
-
-    .superscript {
-        font-size: 1.4rem;
-    }
-
-    .package .description {
-        font-size: 20px;
-    }
-
-    .package hr {
-        border-top-width: 3.8px;
-    }
-
-    .package ul li {
-        font-size: 18px;
-        margin: 5px 0;
-    }
-
-    .package .cta-secondary {
-        font-size: 18px;
-        padding: 8px 19px;
-    }
-
-
     /* Footer Section */
     footer .brand {
         width: 23%;
@@ -1060,7 +950,7 @@
     }
 
     .logo img {
-        width: 170px;
+        width: 145px;
     }
 
     .contact-info {
@@ -1084,210 +974,22 @@
 
     .detail-box p {
         width: 100%;
-        font-size: 27px;
+        font-size: 20px;
         line-height: 1.7;
     }
 
     .hero-slider .img-container .img-box {
-        width: 360px;
-    }
-
-    .hero-slider .carousel-indicators {
-        bottom: -69%;
+        width: 300px;
     }
 
     header::after {
         width: 40%;
     }
 
-    .nav-item a {
-        font-size: 20px;
-    }
-
     /* Typography */
     .btn-box .cta-primary {
-        font-size: 20px;
-        padding: 15px 21px;
-    }
-
-    .intro {
-        font-size: 29px;
-    }
-
-    /**** Reasons Section ****/
-    .block-quote .title {
-        font-size: 28px;
-    }
-
-    .block-quote blockquote {
-        font-size: 22px;
-    }
-
-    .block-quote span {
-        font-size: 50px;
-    }
-
-    /**** About Intro Section ****/
-    .about .nav-tabs .nav-link.active, .about .nav-tabs .nav-item.show .nav-link {
-        font-size: 28px;
-    }
-
-    .about .nav-link {
-        font-size: 25px;
-    }
-
-    #about-intro .about {
-        width: 30%;
-    }
-
-    #about-intro .intro-container {
-        justify-content: space-evenly;
-    }
-
-    .about #myTabContent.tab-content p {
-        font-size: 22px;
-    }
-
-    .why-us {
-        width: 551px;
-        height: auto;
-        border-radius: 1.5%;
-        margin-left: 0;
-    }
-
-    .why-us h3 {
-        font-size: 22px;
-        margin-bottom: 1rem;
-    }
-
-    .explanation span {
         font-size: 18px;
-    }
-
-    .explanation p {
-        font-size: 16px;
-        margin-bottom: 16px;
-    }
-
-    #values-tab h5 {
-	    color: var(--primary-color);
-	    margin-top: 2px;
-	    font-size: 22px;
-    }
-
-    #values-tab .circle {
-	    background-color: var(--secondary-color);
-	    font-size: 18px;
-	    width: 34px;
-  	    height: 34px;
-    }
-
-    .about #myTabContent.tab-content #values-tab p {
-	    font-size: 18px;
-	    margin-left: 40px;
-	    margin-bottom: 3px;
-	    margin-top: -5px;
-    }  
-    
-    /**** Testimonials section ****/
-    .testimonial {
-        width: 470px;
-    }
-
-    .info .img {
-        top: -100%;
-        width: 100%;
-        text-align: center;
-    }
-
-    .info .img img {
-        width: 163px;
-        height: 163px;
-    }
-
-    .testimonial-details .name {
-        font-size: 25px;
-    }
-
-    .testimonial-details .title {
-        font-size: 18px;
-        margin-bottom: 9px;
-    }
-
-    .testimonial .networks i.fab {
-        font-size: 20px;
-    }
-
-    .comment q {
-        font-size: 18px;
-        width: 90%;
-        margin: 1.6rem;
-    }
-
-    .testimonial .cta-secondary {
-        font-size: 18px;
-        padding: 12px 19px;
-        margin-top: 1.8rem;
-        margin-bottom: 1rem;
-    }
-
-    /**** Seervices intro section ****/
-    #services-intro .intro-container {
-        margin: 5rem 5rem 6rem 5rem;
-    }
-
-    .service {
-        width: 460px;
-        height: 444px;
-        justify-content: space-around;
-    }
-
-    .service .icon-service span {
-        font-size: 25px;
-    }
-
-    .service p {
-        font-size: 18px;
-        padding: 0 9px;
-    }
-
-    .service .buttons .cta-secondary {
-        margin-bottom: 15px;
-        font-size: 18px;
-    }
-
-    /**** Contact Snippet section ****/
-    form {
-        width: 603px;
-    }
-
-    form label {
-        font-size: 18px;
-    }
-
-    form input, form textarea, form select, .form-control, .form-select {
-        font-size: 20px;
-    }
-
-    .cta-primary {
-        font-size: 18px;
-        padding: 12px 25px;
-    }
-
-    #contact-snippet .cta-primary {
-        margin-top: 2rem;
-    }
-
-    #contact-snippet .text p {
-        font-size: 22px;
-    }
-
-    #contact-snippet .contact-info-b span {
-        font-size: 18px;
-    }
-
-    #contact-snippet .intro-container {
-        justify-content: space-evenly;
+        padding: 12px 12px;
     }
 
     /**** about page ****/
@@ -1297,69 +999,6 @@
 
     #about-page .why-us {
         width: 44%;
-    }
-
-    #about-page .explanation p {
-        font-size: 18px;
-    }
-
-    /******Services Page****/
-    .package {
-        width: 410px;
-        height: 529px;
-    }
-
-    .brand-design .package:nth-child(3) {
-        height: 555px;
-    }
-
-    .web-design .package {
-        width: 410px;
-        height: 554px;
-    }
-
-    .web-design .package:nth-child(3) {
-        height: 586px;
-    }
-
-    .digital-design .package:nth-child(3) {
-        height: 567px;
-    }
-
-    .package .title {
-        font-size: 25px;
-    }
-
-    .package .price {
-        margin: 20px 0;
-        padding: 8px 35px;
-        font-size: 30px
-    }
-
-    .superscript {
-        font-size: 1.5rem;
-    }
-
-    .package .description {
-        font-size: 20px;
-    }
-
-    .package hr {
-        border-top-width: 3.8px;
-    }
-
-    #services-page i {
-        font-size: 17px;
-    }
-
-    .package ul li {
-        font-size: 18px;
-        margin: 4px 0;
-    }
-
-    .package .cta-secondary {
-        font-size: 20px;
-        padding: 8px 19px;
     }
 
     /******Portfolio Page****/
@@ -1375,19 +1014,6 @@
 
     #work-page .portfolio-item img {
         object-fit: fill;
-    }
-
-    /**** Footer ****/
-    footer h3 {
-        font-size: 25px;
-    }
-
-    footer div a {
-        font-size: 18px;
-    }
-
-    footer .brand p {
-        font-size: 16px;
     }
 
     
