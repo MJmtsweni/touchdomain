@@ -334,6 +334,7 @@ i:hover {
     color: var(--primary-color);
     text-transform: uppercase;
     font-size: 2rem;
+    font-weight: 700;
 }
 
 .package {

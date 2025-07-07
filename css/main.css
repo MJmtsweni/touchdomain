@@ -335,6 +335,7 @@ footer {
     justify-content: space-evenly;
     padding-top: 1.5rem;
     padding-bottom: 0.8rem;
+    margin-top: -63px;
 }
 
 footer img {
