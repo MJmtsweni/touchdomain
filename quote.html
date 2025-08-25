@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Quote | Web Design & Digital Services | Touch Domain</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <!-- fonts style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!--Bootsrap Dependencies-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Main CSS Stylesheet-->
+    <link rel="stylesheet" href="./css/main.css">
+    <!--Header CSS Stylesheet-->
+    <link rel="stylesheet" href="./css/header.css">
+    <!--Components CSS Stylesheet-->
+    <link rel="stylesheet" href="./css/components.css">
+    <!--Mobile Responsiveness CSS Stylesheet-->
+    <link rel="stylesheet" href="./css/responsiveness.css">
+    <!--Fontawesome icons-->
+    <script src="https://kit.fontawesome.com/76e3c9c22e.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-light">
+    <div aria-live="polite" aria-atomic="true" class="position-relative">
+        <div class="toast-container position-fixed start-50 translate-middle-x p-3" style="top: 2rem; z-index: 1080;" id="toastContainer">
+        </div>
+    </div>
+    <header>
+        <div class="nav-container">
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="./branding/logo-nav.png" alt="" srcset="">
+            </a>
+            <ul class="nav-items">
+                <li class="nav-item ">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./work.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./contact.html">Reach Us</a>
+                </li>
+                <li class="nav-item  active">
+                    <a href="./quote.html" class="cta-nav">Get a Quote</a>
+                </li>
+            </ul>
+            <div class="contact-info">
+                <div class="social-icons">
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="mailto:">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+                
+            </div>
+            <!--Mobile menu button-->
+            <div class="menu-btn">
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+            </div>
+            <!--Mobile navigation-->
+            <ul class="menu-mobile">
+                <li>
+                    <a href="./index.html" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="./about.html" class="nav-link">About us</a>
+                </li>
+                <li>
+                    <a href="./services.html" class="nav-link">Services</a>
+                </li>
+                <li>
+                    <a href="./work.html" class="nav-link">Portfolio</a>
+                </li>
+                <li>
+                    <a href="./contact.html" class="nav-link">Reach Us</a>
+                </li>
+                <li>
+                    <a href="./quote.html" class="nav-link"><span class="current">Get a Quote</span></a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+        <section class="hero">
+            <div class="hero-slider">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="detail-box">
+                                <h1>
+                                    Get Your Custom Package
+                                </h1>
+                                <span class="heading-text">
+                                    Tailored Solutions for Your Vision
+                                </span>
+                                <p>
+                                    Ready to bring your digital aspirations to life? Every great online presence begins with a clear plan. Here, you can easily select
+                                    the precise services your brand needs to thrive. Let's build a customized solution that perfectly aligns with your vision and budget, 
+                                    ensuring you get exactly what's required to make an impact.
+                                </p>
+                                <div class="btn-box">
+                                    <a href="#quote" class="cta-primary">
+                                        Build Your Custom Quote Now!
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 img-container">
+                            <div class="img-box">
+                                <img src="./branding/quote-landing.png" alt="Contact page landing page">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- end slider section -->
+
+    <!--Main home content-->
+    <main>
+        <section id="quote">
+            <h2>Your Custom Quote</h2>
+            <h3 class="heading-text">Tailored Solutions for Your Digital Vision</h3>
+            <p class="intro">
+                Ready to bring your digital aspirations to life? Every great online presence begins with a clear plan. Here, you can 
+                easily select the precise services your brand needs to thrive. Let's build a customized solution that perfectly 
+                aligns with your vision and budget, ensuring you get exactly what's required to make an impact.
+            </p>
+            <div class="half-circle-top-right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="126.009" height="339.082" viewBox="0 0 126.009 339.082">
+                    <path id="Path_829" data-name="Path 829" d="M1961.612,1338c-112.265,34.42-137.328,131.025-121.864,194.005,22.023,89.7,121.864,145.076,121.864,145.076V1338" transform="translate(-1835.603 -1338)" fill="#452c63"/>
+                </svg>
+            </div>
+            <div class="intro-container">
+                <div class="web-quote">
+                    <form action="" id="quoteForm">
+                        <h4>Web Design</h4>
+                        <hr>
+                        <p class="section-descrp">
+                            This section covers the core elements needed to get your website online and looking great.
+                        </p>
+                        <div class="select-group">
+                            <div>
+                                <label for="websiteTypeSelect" class="form-label">Website Type</label>
+                                <select class="form-select" id="websiteTypeSelect" aria-label="Default select example">
+                                    <option value="">Choose an option</option>
+                                    <option value="Informational">Informational</option>
+                                    <option value="E-commerce Store">E-commerce Store</option>
+                                    <option value="Portfolio/Personal">Portfolio/Personal</option>
+                                    <option value="Blog/Content Hub">Blog/Content Hub</option>
+                                    <option value="Custom Web Application">Custom Web Application</option>
+                                </select>
+                                <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="Crafting a unique and versatile logo that encapsulates your brand's essence.">
+                                        What is this?
+                                    </i>
+                                </span>
+                            </div>
+                            <div>
+                                <label for="numberOfPagesSelect" class="form-label">Number of Pages</label>
+                                <select class="form-select" id="numberOfPagesSelect" aria-label="Default select example">
+                                    <option value="">Choose an option</option>
+                                    <option value="Up to 5 Pages">Up to 5 Pages</option>
+                                    <option value="6-10 Pages">6-10 Pages</option>
+                                    <option value="11-20 Pages">11-20 Pages</option>
+                                    <option value="20+ Pages">20+ Pages</option>
+                                </select>
+                                <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="Crafting a unique and versatile logo that encapsulates your brand's essence.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                            </div>
+                            <div>
+                                <label for="copyWriting" class="form-label">Copy Writing</label>
+                                <select class="form-select" id="copyWriting" aria-label="Default select example">
+                                    <option value=""> Choose an option</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                                <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="Crafting a unique and versatile logo that encapsulates your brand's essence.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                            </div>
+                        </div>
+                        <div class="select-group">
+                            <div>
+                                <label for="stockImages" class="form-label">Stock Images</label>
+                                <select class="form-select" id="stockImages" aria-label="Default select example">
+                                    <option value=""> Choose an option</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="Yes">No</option>
+                                </select>
+                                <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="Crafting a unique and versatile logo that encapsulates your brand's essence.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                            </div>
+                        </div>
+                        <div class="features">
+                            <h4 class="mt-3">Web Features</h4>
+                            <p class="section-descrp">
+                                Enhance your website with essential features to improve user interaction and manage your content effectively.
+                            </p>
+                            <div class="check-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="websiteSecurity">
+                                    <label class="form-check-label" for="websiteSecurity">
+                                        Website Security
+                                    </label>
+                                    <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="Crafting a unique and versatile logo that encapsulates your brand's essence.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="onPageOptimization">
+                                    <label class="form-check-label" for="onPageOptimization">
+                                        On-Page Optimization
+                                    </label>
+                                    <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="Crafting a unique and versatile logo that encapsulates your brand's essence.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="advancedSEO">
+                                    <label class="form-check-label" for="advancedSEO">
+                                        Advanced SEO
+                                    </label>
+                                    <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="Crafting a unique and versatile logo that encapsulates your brand's essence.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="paymentGateway">
+                                    <label class="form-check-label" for="paymentGateway">
+                                        Payment Gateway
+                                    </label>
+                                    <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="Crafting a unique and versatile logo that encapsulates your brand's essence.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="bookingSystem">
+                                    <label class="form-check-label" for="bookingSystem">
+                                        Booking System
+                                    </label>
+                                    <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="Crafting a unique and versatile logo that encapsulates your brand's essence.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                                </div>
+                            </div>
+                            <div class="check-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="userAccountFunctionality">
+                                    <label class="form-check-label" for="userAccountFunctionality">
+                                        User Account Functionality
+                                    </label>
+                                    <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="Crafting a unique and versatile logo that encapsulates your brand's essence.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="customFunctionality">
+                                    <label class="form-check-label" for="customFunctionality">
+                                        Custom Functionality
+                                    </label>
+                                    <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="A custom functionality that you require for your website.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="crmSystem">
+                                    <label class="form-check-label" for="crmSystem">
+                                        CRM System
+                                    </label>
+                                    <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title=" A tool that helps businesses manage customer info, interactions, and sales—all in one place.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Brand Identity</h4>
+                        <hr>
+                        <p class="section-descrp">
+                            This section covers the foundational elements that define your brand's unique visual identity.
+                        </p>
+                        <div class="select-group">
+                            <div>
+                                <label for="primaryLogo" class="form-label">Primary Logo</label>
+                                <select class="form-select" id="primaryLogo" aria-label="Default select example">
+                                    <option value="">Choose an option</option>
+                                    <option value="2 Initial Concepts">2 Initial Concepts</option>
+                                    <option value="3 Initial Concepts">3 Initial Concepts</option>
+                                </select>
+                                <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="Crafting a unique and versatile logo that encapsulates your brand's essence.">
+                                        What is this?
+                                    </i>
+                                </span>
+                            </div>
+                            <div>
+                                <label for="socialMediaProfilePack" class="form-label">Social Media Profile Pack</label>
+                                <select class="form-select" id="socialMediaProfilePack" aria-label="Default select example">
+                                    <option value="">Choose an option</option>
+                                    <option value="2 Platforms">2 Platforms</option>
+                                    <option value="4 Platforms">4 Platforms</option>
+                                </select>
+                                <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="Optimized profile pictures and cover photos for your chosen social platforms.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                            </div>
+                            <div>
+                                <label for="customIconographySet" class="form-label">Custom Iconography Set</label>
+                                <select class="form-select" id="customIconographySet" aria-label="Default select example">
+                                    <option value="">Choose an option</option>
+                                    <option value="5 Custom Icons">5 Custom Icons</option>
+                                    <option value="10 Custom Icons">10 Custom Icons</option>
+                                    <option value="15 Custom Icons">15 Custom Icons</option>
+                                </select>
+                                <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="Bespoke icons to enhance your digital presence, consistent with your brand style.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                            </div>
+                        </div>
+                        <div class="select-group">
+                            <div>
+                                <label for="digitalMarketingTemplate" class="form-label">Digital Marketing Template</label>
+                                <select class="form-select" id="digitalMarketingTemplate" aria-label="Default select example">
+                                    <option value="">Choose an option</option>
+                                    <option value="Social Post Template">Social Post Template</option>
+                                    <option value="Digital Ad Banner Template">Digital Ad Banner Template</option>
+                                    <option value="Email Marketing Template">Email Marketing Template</option>
+                                </select>
+                                <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="A single, editable template for common digital marketing assets.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                            </div>
+                            <div>
+                                <label for="presentationTemplateDesign" class="form-label">Presentation Template Design</label>
+                                <select class="form-select" id="presentationTemplateDesign" aria-label="Default select example">
+                                    <option value="">Choose an option</option>
+                                    <option value="No Presentation Template">No Presentation Template</option>
+                                    <option value="Master Slide Template">Master Slide Template</option>
+                                    <option value="5-10 Slide Template">5-10 Slide Template</option>
+                                    <option value="10-20 Slide Template">10-20 Slide Template</option>
+                                </select>
+                                <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="A professional, on-brand template for pitches and internal communications.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                            </div>
+                        </div>
+                        <h4 class="mt-3">Brand Identity Features</h4>
+                        <p class="section-descrp">
+                            Ensure your brand shines consistently across all digital touchpoints.
+                        </p>
+                        <div class="check-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="logoVariations">
+                                    <label class="form-check-label" for="logoVariations">
+                                        Logo Variations
+                                    </label>
+                                    <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="Including secondary marks, submarks, and favicons for diverse applications.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="colorPaletteDefinition">
+                                    <label class="form-check-label" for="colorPaletteDefinition">
+                                        Color Palette Definition
+                                    </label>
+                                    <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="A curated set of primary, secondary, and accent colors with precise codes for consistency.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="typographySelection">
+                                    <label class="form-check-label" for="typographySelection">
+                                        Typography Selection
+                                    </label>
+                                    <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="Recommendation of primary (heading) and secondary (body) fonts that convey brand tone.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="basicBrandBoard">
+                                    <label class="form-check-label" for="basicBrandBoard">
+                                        Basic Brand Board
+                                    </label>
+                                    <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="A concise one-page visual guide showcasing your logo, colors, and fonts for easy reference.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                                </div>
+                        </div>
+                        <div class="check-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="letterheadDesign">
+                                    <label class="form-check-label" for="letterheadDesign">
+                                        Letterhead Design
+                                    </label>
+                                    <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="Branded letterhead for official communications.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="brandVoice">
+                                    <label class="form-check-label" for="brandVoice">
+                                        Brand Voice
+                                    </label>
+                                    <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="Define your brand's personality, tone, and key messaging principles for consistent communication.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="graphicPatterns">
+                                    <label class="form-check-label" for="graphicPatterns">
+                                        Graphic Patterns
+                                    </label>
+                                    <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="Unique, repeatable visual elements to enrich your brand's aesthetic.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="emailSignatureDesign">
+                                    <label class="form-check-label" for="emailSignatureDesign">
+                                        Email Signature Design
+                                    </label>
+                                    <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="A professional, branded email signature for your team.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                                </div>
+                        </div>
+                        <h4>Digital Content</h4>
+                        <hr>
+                        <p class="section-descrp">
+                            This section lays the groundwork for impactful digital content, ensuring every piece serves a purpose.
+                        </p>
+                        <div class="select-group">
+                            <div>
+                                <label for="customStaticGraphicPack" class="form-label">Custom Static Graphic Pack</label>
+                                <select class="form-select" id="customStaticGraphicPack" aria-label="Default select example">
+                                    <option value="">Choose an option</option>
+                                    <option value="5 Custom Designs">5 Custom Designs</option>
+                                    <option value="10 Custom Designs">10 Custom Designs</option>
+                                    <option value="20 Custom Designs">20 Custom Designs</option>
+                                </select>
+                                <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="Visually striking image posts optimized for your chosen platforms.">
+                                        What is this?
+                                    </i>
+                                </span>
+                            </div>
+                            <div>
+                                <label for="shortFormAnimatedGifPack" class="form-label">Animated GIF Pack</label>
+                                <select class="form-select" id="shortFormAnimatedGifPack" aria-label="Default select example">
+                                    <option value="">Choose an option</option>
+                                    <option value="2 Short-Form GIFs">2 Short-Form GIFs</option>
+                                    <option value="5 Short-Form GIFs">5 Short-Form GIFs</option>
+                                    <option value="10 Short-Form GIFs">10 Short-Form GIFs</option>
+                                </select>
+                                <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="Engaging, looping animations to grab attention.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                            </div>
+                            <div>
+                                <label for="shortFormSocialVideo" class="form-label">Short-Form Social Video</label>
+                                <select class="form-select" id="shortFormSocialVideo" aria-label="Default select example">
+                                    <option value="">Choose an option</option>
+                                    <option value="1 Video (up to 30 seconds)">1 Video (up to 30 seconds)</option>
+                                    <option value="3 Videos (up to 30 seconds each)">3 Videos (up to 30 seconds each)</option>
+                                    <option value="5 Videos (up to 30 seconds each)">5 Videos (up to 30 seconds each)</option>
+                                </select>
+                                <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="Professionally edited videos optimized for social platforms (e.g., Reels, TikToks).">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                            </div>
+                        </div>
+                        <div class="select-group">
+                            <div>
+                                <label for="infographicDesign" class="form-label">Infographic Design</label>
+                                <select class="form-select" id="infographicDesign" aria-label="Default select example">
+                                    <option value="">Choose an option</option>
+                                    <option value="Basic Infographic (Single-page)">Basic Infographic (Single-page)</option>
+                                    <option value="Complex Infographic (Multi-section/Interactive)">Complex Infographic (Multi-section/Interactive)</option>
+                                </select>
+                                <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="Transform complex data or processes into engaging, shareable visual stories.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                            </div>
+                            <div>
+                                <label for="socialMediaCaptionWriting" class="form-label">Social Media Caption Writing</label>
+                                <select class="form-select" id="socialMediaCaptionWriting" aria-label="Default select example">
+                                    <option value="">Choose an option</option>
+                                    <option value="Captions for 5 Posts">Captions for 5 Posts</option>
+                                    <option value="Captions for 10 Posts">Captions for 10 Posts</option>
+                                    <option value="Captions for 20 Posts">Captions for 20 Posts</option>
+                                </select>
+                                <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="Transform complex data or processes into engaging, shareable visual stories.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                            </div>
+                            <div>
+                                <label for="digitalAdBannerDesign" class="form-label">Digital Ad Banner Design</label>
+                                <select class="form-select" id="digitalAdBannerDesign" aria-label="Default select example">
+                                    <option value="">Choose an option</option>
+                                    <option value="3 Ad Banner Sizes/Variations">3 Ad Banner Sizes/Variations</option>
+                                    <option value="5 Ad Banner Sizes/Variations">5 Ad Banner Sizes/Variations</option>
+                                    <option value="Custom Ad Banner Set">Custom Ad Banner Set</option>
+                                </select>
+                                <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="Eye-catching designs for online advertising campaigns.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                            </div>
+                        </div>
+                        <div class="select-group">
+                            <div>
+                                <label for="explainerVideoProduction" class="form-label">Explainer Video Production</label>
+                                <select class="form-select" id="explainerVideoProduction" aria-label="Default select example">
+                                    <option value="">Choose an option</option>
+                                    <option value="Up to 60 Seconds">Up to 60 Seconds</option>
+                                    <option value="60-90 Seconds">60-90 Seconds</option>
+                                    <option value="90-120 Seconds">90-120 Seconds</option>
+                                </select>
+                                <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="Professionally produced video to articulate your brand, product, or service.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                            </div>
+                            <div>
+                                <label for="motionGraphicsAnimation" class="form-label">Motion Graphics Animation</label>
+                                <select class="form-select" id="motionGraphicsAnimation" aria-label="Default select example">
+                                    <option value="">Choose an option</option>
+                                    <option value="Up to 30 Seconds Animation">Up to 30 Seconds Animation</option>
+                                    <option value="30-60 Seconds Animation">30-60 Seconds Animation</option>
+                                    <option value="Custom Animation">Custom Animation</option>
+                                </select>
+                                <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="Dynamic visual effects and animated elements for your videos or digital platforms.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                            </div>
+                        </div>
+                        <h4 class="mt-3">Digital Content Features</h4>
+                        <p class="section-descrp">
+                            Craft captivating visuals and narratives for your social channels to spark engagement.
+                        </p>
+                        <div class="check-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="profileImageOptimization">
+                                <label class="form-check-label" for="profileImageOptimization">
+                                    Profile Image Optimization
+                                </label>
+                                <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="Enhance your profile images, cover photos, and highlights for a cohesive look.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="newsletterHeaderDesign">
+                                <label class="form-check-label" for="newsletterHeaderDesign">
+                                    Newsletter Header Design
+                                </label>
+                                <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="A custom header that visually elevates your email communications.">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="animatedLogoReveal">
+                                <label class="form-check-label" for="animatedLogoReveal">
+                                    Animated Logo Reveal
+                                </label>
+                                <span class="description">
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="A dynamic animation of your brand's logo for video intros or digital use">
+                                        What is this?
+                                    </i>                                    
+                                </span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div id="price">
+                            <div class="est-total">
+                                <h4>Your Estimated Total</h4>
+                                <p class="est-price" id="displayPrice"></p>
+                                <p id="consultationMessage"></p>
+                            </div>
+                            <h3>Ready To Get Started?</h3>
+                            <p>
+                                This quotation is an **estimation** based on your initial selections and current market rates. The final price may vary based on your specific requirements, 
+                                custom features, and any additional services discussed during our upcoming consultation. Our team will contact you shortly to schedule a session to finalize 
+                                your needs, and a comprehensive, **official quotation will be formulated thereafter**.
+                            </p>
+                            <div class="client-details">
+                                <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="clientNameInput" placeholder="Your full name" required>
+                                <label for="clientNameInput">Full name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="clientEmailInput" placeholder="name@example.com" required>
+                                <label for="clientEmailInput">Email address</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="tel" class="form-control" id="phoneNumberInput" placeholder="Contact number" required>
+                                <label for="phoneNumberInput">Contact number</label>
+                            </div>
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Type your message here" id="messageTextarea"></textarea>
+                                <label for="messageTextarea">Message</label>
+                            </div>
+                            </div>
+                            <div id="submitBtnWrapper" class="submit-btn-wrapper">
+                            <button type="submit" class=" cta-primary" id="submitQuoteBtn">
+                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" id="submitSpinner"></span>
+                                Submit Quote Request
+                                
+                            </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="half-circle-bottom-left">
+                <svg xmlns="http://www.w3.org/2000/svg" width="126.009" height="339.082" viewBox="0 0 126.009 339.082">
+                    <path id="Path_830" data-name="Path 830" d="M1961.612,1338c-112.265,34.42-137.328,131.025-121.864,194.005,22.023,89.7,121.864,145.076,121.864,145.076V1338" transform="translate(1961.612 1677.082) rotate(180)" fill="#9972ab"/>
+                </svg>
+            </div>
+        </section>
+        </section>
+    </main>
+    <footer>
+        <div class="brand">
+            <a href="http://" target="_parent" rel="noopener noreferrer">
+                <img src="./branding/brand.png" alt="" srcset="">
+            </a>
+            <p>&copy; 2025. Touch Domain, All Rights Reserved.</p>
+        </div>
+        <div class="links">
+            <h3>Links</h3>
+            <a href="./about.html">About</a>
+            <a href="./services.html">Services</a>
+            <a href="./work.html">Portfolio</a>
+            <a href="./contact.html">Reach Us</a>
+            <a href="">Sitemap</a>
+        </div>
+        <div class="footer-info">
+            <h3>information</h3>
+            <a href="">Terms & conditions</a>
+            <a href="">Private policy</a>
+        </div>
+        <div class="social">
+            <h3>Social Media</h3>
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook-square"></i>
+                Touch Domain
+            </a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+                Touch domain
+            </a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin-in"></i>
+                Touch domain
+            </a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-x-twitter"></i>
+                Touch domain
+            </a> 
+          </div>
+        <div class="reach">
+            <h3>Reach Us</h3>
+            <a href="mailto:tmtsweni@hotmail.com">info@mail.com</a>
+            <a href="tel:+27813276153">0813276153</a>
+        </div>
+    </footer>
+    <!--Bootstrap Dependencies-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="./js/Tooltips-initialization.js"></script>
+    <!--Quote Form Script-->
+    <script src="js/quoteForm.js"></script>
+    <!--Toggle Menu Script-->
+    <script src="./js/toggle-menu.js"></script>
+</body>
+</html>

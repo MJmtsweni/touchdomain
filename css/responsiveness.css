@@ -28,7 +28,7 @@
 
     nav {
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-        height: 70px;
+        height: 60px;
         padding: 0px 16px;
     }
 
@@ -37,11 +37,14 @@
     }
 
     h2 {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
+        line-height: 1.2;
     }
 
     .heading-text {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        width: 97%;
+        margin: auto;
     }
 
     Header::after {
@@ -50,7 +53,7 @@
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 35%;
+        height: 36%;
         background-image: url(../branding/hero-background-mobile.png);
     }
 
@@ -60,12 +63,14 @@
     }
 
     h1 {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         width: 90vw;
+        line-height: 1.2;
     }
 
     .detail-box .heading-text {
         width: 90vw;
+        margin: 0 0 0.1rem 5px;
     }
 
     .carousel-item {
@@ -97,7 +102,7 @@
     }
 
     .hero-slider .carousel-indicators {
-        bottom: 75px;
+                bottom: 3%;
     }
 
     .hero-slider .carousel-indicators li {
@@ -108,12 +113,13 @@
 
     .detail-box p {
         font-size: 16px;
-        margin: 4px 0 20px 5px;
+        margin: 4px 0 10px 5px;
     }
 
     /* Button */
     .cta-primary {
         font-size: 12px;
+        padding: 7px 13px;
     }
 
     .cta-secondary {
@@ -203,7 +209,7 @@
 
     .about .nav-tabs {
         font-size: 16px;
-        margin-bottom: 16px;
+        margin-bottom: 8px;
     }
 
     .about .nav-tabs .nav-link.active, .about .nav-tabs .nav-item.show .nav-link {
@@ -299,6 +305,7 @@
     /* About Page */
     #about-page .intro-container {
         row-gap: 16px;
+        margin-top: 0;
     }
 
     #about-page .intro-container .about {
@@ -348,6 +355,7 @@
 
     #work-page .portfolio-item {
         width: 100%;
+        margin-bottom: 25px;
     }
 
     #work-page .portfolio-item img {
@@ -441,6 +449,73 @@
 
     .contact-info-group {
         width: 92%;
+    }
+
+    /******Quote Page****/
+    #quote .intro-container {
+        margin: 0;
+    }
+
+    #quote form {
+        padding: 20px;
+    }
+
+    #quote hr {
+        margin-bottom: 1rem;
+    }
+
+    .select-group {
+        margin-left: 16px;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 0rem;
+    }
+
+    #quote .select-group div {
+        width: 80%;
+        margin-bottom: 18px;
+    }
+
+    .check-group {
+        margin-left: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    #quote .form-select {
+        font-size: 15px;
+    }
+
+    #quote h4 {
+        margin-top: 18px;
+    }
+
+    #price {
+        padding: 10px;
+    }
+
+    .est-total {
+        width: 95%;
+        padding: 13px;
+    }
+
+    #price .est-total h4 {
+        margin-top: 10px;
+        font-size: 1.45rem;
+    }
+
+    p#displayPrice.est-price {
+        margin-bottom: 8px;
+    }
+
+    #price p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .client-details {
+        width: 90%;
     }
 
     footer {
@@ -554,12 +629,14 @@
 
     .hero-slider .row {
         padding: 0 0% 0 0;
-        height: 100vh;
+        height: calc(100vh - 100px);
         align-items: center;
         flex-direction: column;
         flex-wrap: nowrap;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding-top: 8%;
+        padding-bottom: 7%;
     }
 
     .col-md-6 {
@@ -823,6 +900,81 @@
         object-fit: fill;
     }
 
+    /* Quote Page */
+    #quote .intro {
+        margin-bottom: 9rem;
+        width: 91%;
+    }
+
+    #quote .half-circle-top-right {
+        top: 8%;
+    }
+
+    #quote .intro-container {
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    #quote form {
+        padding: 20px;
+    }
+
+
+    #quote hr {
+        margin-bottom: 1rem;
+    }
+
+    .section-descrp {
+        margin-bottom: 1.5rem;
+        font-size: 16px;
+    }
+
+    .select-group {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        column-gap: 3%;
+    }
+
+    #quote .select-group div {
+        width: 33%;
+    }
+
+    #quote form label {
+        font-size: 15;
+    }
+
+    #quote .form-select {
+        font-size: 14px;
+    }
+
+    .check-group {
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        flex-wrap: wrap;
+    }
+
+    #quote .form-check {
+        margin-right: 15px;
+        margin-bottom: 8px;
+        width: auto;
+    }
+
+    .form-check-label {
+        font-size: 14px;
+    }
+
+    #price {
+        padding: 18px;
+    }
+
+    #price p {
+        width: 100%;
+    }
+
+    .client-details {
+        width: 70%;
+    }
+
     /* Footer Section */
     footer .brand {
         width: 23%;
@@ -843,13 +995,6 @@
     footer div a {
         font-size: 13px;
     }
-
-
-
-
-
-    
-
 }
 
 /* Laptops */
@@ -863,12 +1008,16 @@
         font-size: 14px;
     }
 
+    .hero-slider .row {
+        padding: 0 7% 0 0;
+    }
+
     header::after {
         width: 43%;
     }
 
     h1 {
-        font-size: 2.8rem;
+        font-size: 2.6rem;
         width: 52vw;
     }
 
@@ -878,8 +1027,19 @@
 
     /* Typography */
     h2 {
-        font-size: 2.8rem;
+        font-size: 2.6rem;
     }
+
+    .intro {
+        width: 92%;
+        margin-bottom: 7rem;
+        font-size: 20px;
+    }
+
+    .half-circle-top-right {
+        top: 17%;
+    }
+
 
     /* Reasons Home Section */
     .block-quote blockquote {
@@ -905,13 +1065,16 @@
     }
 
     /* Service Home Section */
+    .half-circle-top-right {
+        top: 8%;
+    }
     #services-intro .intro-container {
         margin: 0rem 1rem 2rem 0rem;
     }
     
     .service {
         width: 30%;
-        height: fit-content;
+        height: 385px;
     }
 
     /**** about page ****/
@@ -938,7 +1101,50 @@
         object-fit: fill;
     }
 
+    /******Quote Page****/
+    #quote .half-circle-top-right { 
+        top: 6%;
+    }
+
+    #quote .intro-container {
+        margin: 5rem 3rem 6rem 3rem;
+    }
+
+    #quote hr {
+        margin-bottom: 1rem;
+    }
+
+    .section-descrp {
+        margin-bottom: 1.5rem;
+        font-size: 16px;
+    }
+
+    .select-group {
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+    }
     
+    #quote .select-group div {
+        width: 28%;
+    }
+
+    #quote .form-label {
+        font-size: 15px;
+    }
+
+    #quote .form-select {
+        margin-bottom: 5px;
+    }
+
+    .check-group {
+        margin-left: 2rem;
+        flex-wrap: wrap;
+    }
+
+    #quote .form-check {
+        width: auto;
+        margin-bottom: 5px;
+    }
 }
 
 /* Large Screens */
@@ -963,7 +1169,7 @@
     }
 
     h1 {
-        font-size: 3.8rem;
+        font-size: 3.5rem;
         width: 48vw;
     }
 
@@ -989,7 +1195,15 @@
     /* Typography */
     .btn-box .cta-primary {
         font-size: 18px;
-        padding: 12px 12px;
+        padding: 12px 23px;
+    }
+
+    .cta-primary {
+        padding: 11px 25px;
+    }
+
+    #contact-snippet .cta-primary {
+        margin-top: 2rem;
     }
 
     /**** about page ****/

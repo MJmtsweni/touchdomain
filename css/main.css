@@ -18,6 +18,10 @@ html, body {
     overflow-x: hidden;
 }
 
+hr {
+    opacity: 1;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -31,10 +35,11 @@ a, a:hover, a:focus {
 
 h2 {
     color: var(--primary-color);
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 800;
     text-transform: uppercase;
     text-align: center;
+    line-height: 0.7;
 
 }
 
@@ -81,7 +86,7 @@ main section {
 
 .half-circle-top-right {
     position: absolute;
-    top: 11%;
+    top: 16%;
     right: 0;
 }
 
@@ -107,18 +112,20 @@ main section {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin: 5rem 2rem 6rem 2rem;
+    margin: 13rem 2rem 7rem 2rem;
 }
 
 #about-intro .about {
     width: 60%;
 }
 
+
+
 .why-us {
     width: 385px;
     height: 300px;
     background-color: var(--primary-color);
-    border-radius: 3%;
+    border-radius: 19px;
     color: #fff;
     padding: 13px;
     margin-left: 2rem;
@@ -162,21 +169,20 @@ main section {
 #testimonials .intro-container {
     justify-content: space-evenly;
     padding: 0;
-    margin-top: 14rem;
+    margin-top: 18rem;
 }
 
 /*****Services Home Page*****/
 #services-intro .intro-container {
     justify-content: space-evenly;
     padding: 0;
-    margin-top: 0;
 }
 
 .service {
     display: flex;
     flex-direction: column;
     align-content: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: nowrap;
     color: #fff;
     width: 330px;
@@ -281,11 +287,11 @@ main section {
 #about-page .intro-container {
     flex-direction: column;
     row-gap: 68px;
-    margin-top: 0;
+    margin-top: 17rem;
 }
 
 #about-page .intro-container .about {
-    width: 70%;
+    width: 89%;
 }
 
 #about-page .about #myTabContent.tab-content {
@@ -293,9 +299,9 @@ main section {
 }
 
 #about-page .why-us {
-    width: 44%;
+    width: 80%;
     height: fit-content;
-    padding: 30px;
+    padding: 20px;
     margin-left: 0;
 }
 
@@ -316,6 +322,8 @@ main section {
 #about-page .explanation p{
     font-size: 16px;
 }
+
+/**** Services Page*****/
 #services-page i {
     background-color: transparent;
     padding: 0;
@@ -327,6 +335,104 @@ main section {
 #services-page i:hover {
     color: var(--secondary-color);
 }
+
+#services-page .half-circle-top-right {
+    top: 8%;
+}
+
+/**** Quote Page*****/
+#quote .half-circle-top-right {
+    top: 6%;
+}
+
+#price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+}
+
+.est-total {
+    width: 395px;
+    text-align: center;
+    padding: 23px;
+    padding-bottom: 5px;
+    background-color: #d4d4d445;
+    border-radius: 28px;
+    margin-bottom: 1.8rem;
+}
+
+p#displayPrice.est-price {
+    width: 100%;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 15px;
+    color: var(--primary-color);
+}
+
+#price h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin: 10px 0;
+}
+
+#price p {
+    width: 80%;
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.client-details {
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+.client-details .form-floating {
+    margin-bottom: 25px;
+}
+
+#quoteForm form input, form textarea, form select, .form-control, .form-select {
+    font-size: 15px;
+}
+
+#quoteForm .form-floating>.form-control-plaintext:focus, .form-floating>.form-control-plaintext:not(:placeholder-shown), .form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown) {
+    padding-bottom: .1rem;
+}
+
+textarea#messageTextarea.form-control {
+    height: 83px;
+}
+
+.form-floating>.form-control, .form-floating>.form-control-plaintext {
+    padding: 1rem .5rem;
+}
+
+.form-floating>label {
+    padding: 1rem .4rem;
+}
+
+#submitQuoteBtn:disabled {
+    background-color: #A0A0A0 !important; /* A darker shade of grey */
+    border-color: #909090 !important;     /* Match border to background */
+    cursor: not-allowed;                  /* Shows a 'no entry' cursor */
+    opacity: 0.7;                         /* Slightly transparent */
+    box-shadow: none !important;          /* Remove any shadow */
+    pointer-events: none;                 /* Crucial for disabling hover on parent, 
+                                             though tooltip needs special handling */
+}
+
+#submitSpinner {
+    display: none;
+}
+
+/* For tooltip wrapper (needed because pointer-events: none on button disables tooltip) */
+.submit-btn-wrapper {
+    display: inline-block; /* Essential for the tooltip to work when the button is disabled */
+     /* If button is block level, make wrapper block level */
+}
+
 
 footer {
     background-color: var(--primary-color);

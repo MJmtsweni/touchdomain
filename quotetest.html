@@ -1,0 +1,143 @@
+ <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Quotation - Touch Domain</title>
+                <style>
+                    body { font-family: Arial, sans-serif; margin: 40px; color: #333; }
+                    .pdf-header-container {
+                        display: flex;
+                        justify-content: space-between; /* Pushes left and right content apart */
+                        align-items: flex-start; /* Aligns content to the top of the container */
+                        margin-bottom: 30px;
+                        margin-top: -20px;
+                    }
+
+                    .header-left-content {
+                        display: flex; /* To put logo and text details side-by-side */
+                        align-items: flex-start; /* Align logo and text details to the top */
+                        flex-direction: column; /* Stack logo/details block above quote meta */
+                    }
+
+                    .company-branding {
+                        display: flex;
+                        align-items: center; /* Vertically center logo and company details */
+                        margin-bottom: 10px; /* Space between company info and quote meta */
+                    }
+
+                    .header-logo {
+                        max-width: 150px; /* Adjust size as needed */
+                        height: auto;
+                        margin-right: 15px; /* Space between logo and text */
+                    }
+
+                    .company-details p {
+                        margin: 0; /* Remove default paragraph margins */
+                        line-height: 1.2; /* Adjust line height for stacked info */
+                        font-size: 13px; /* Adjust font size */
+                        margin-right: 15px;
+                    }
+
+                    .quote-meta p {
+                        margin: 0; /* Remove default paragraph margins */
+                        line-height: 1.2;
+                        font-size: 13px;
+                    }
+
+                    .header-right-content h1 {
+                        color: #452c63; /* Maintain your brand color for the heading */
+                        margin: 0; /* Remove default h1 margins */
+                        font-size: 24px; /* Adjust heading size */
+                    }
+                    .section { margin-bottom: 18px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+                    .section h2 { color: #452c63; border-bottom: 2px solid #9972ab; padding-bottom: 5px; margin-bottom: 15px; }
+                    ul { list-style: none; padding: 0; }
+                    li { margin-bottom: 5px; }
+                    strong { color: #555; }
+                    .price-section { text-align: left; margin-top: 30px; }
+                    .price-section h2 { font-size: 24px; color: #452c63; }
+                    .consultation-note { color: red; font-weight: bold; margin-top: 10px; }
+                    .footer { margin-top: 50px; text-align: center; font-size: 12px; color: #777; }
+                    .banking-details { margin-top: 30px; border: 1px solid #ddd; padding: 15px; background-color: #f9f9f9; text-align: left; }
+                    .banking-details p { margin: 5px 0; }
+                    .disclaimer { /* NEW CSS for disclaimer */
+                        margin-top: 30px;
+                        padding: 15px;
+                        border: 1px solid #ffc107; /* Light orange border */
+                        background-color: #fff3cd; /* Light orange background */
+                        color: #664d03; /* Darker orange text */
+                        font-size: 14px;
+                        text-align: justify;
+                    }
+                    .disclaimer strong {
+                        color: #664d03; /* Ensure bold text maintains color */
+                    }
+                    .footer { 
+                        margin-top: 50px; 
+                        text-align: center; 
+                        font-size: 12px; 
+                        color: #777;
+                        display: flex;
+                        justify-content: center; /* Centers the items horizontally */
+                        align-items: center;     /* Vertically aligns items if they have different heights */
+                        flex-wrap: wrap;         /* Allows items to wrap to the next line if the content is too wide for the page */
+                        gap: 10px;               /* Adds space between each item (e.g., 10px) */
+                        padding: 0 10px; 
+                    }
+                    .footer p {
+                        margin: 0; /* Important: Remove default paragraph margins to prevent new lines */
+                        white-space: nowrap; /* Optional: Prevents text within an individual p tag from wrapping */
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="pdf-header-container">
+                    <div class="header-left-content">
+                        <div class="company-branding">
+                            <img src="${process.env.APP_LOGO_URL || 'https://via.placeholder.com/150x50?text=Touch+Domain+Logo'}" alt="Touch Domain Logo" class="header-logo">
+                            <div class="company-details">
+                                <p><strong>Touch Domain (Pty) Ltd</strong></p>
+                                <p>Tel: ${process.env.COMPANY_PHONE || '+27 12 345 6789'}</p>
+                                <p>Email: ${process.env.EMAIL_USER.replace(/"[^"]*"\s*<|>/g, '')}</p>
+                            </div>
+                        </div>
+                        <div class="quote-meta">
+                            <p><strong>Quote No:</strong> ${quoteNumber}</p>
+                            <p><strong>Date:</strong> ${currentDate}</p>
+                        </div>
+                    </div>
+                    <div class="header-right-content">
+                        <h1>EST QUOTATION</h1>
+                    </div>
+                </div>
+
+                <div class="section services">
+                    <h2>Selected Services</h2>
+                    ${servicesHtml}
+                </div>
+
+                <div class="price-section">
+                    <h2>Estimated Price: ${priceDisplay}</h2>
+                    ${consultationRequired ? '<p class="consultation-note">* Please note: Some of your selections require a personalized consultation. Our team will contact you shortly to discuss further and provide an accurate quote.</p>' : ''}
+                </div>
+
+                <div class="disclaimer">
+                    <p><strong>Disclaimer:</strong> This quotation is an **estimation** based on your initial selections and current market rates. The final price may vary based on your specific requirements, custom features, and any additional services discussed during our upcoming consultation. Our team will contact you shortly to schedule a session to finalize your needs, and a comprehensive, **official quotation will be formulated thereafter**.</p>
+                </div>
+
+                <div class="banking-details">
+                    <h2>Banking Details</h2>
+                    <p><strong>Bank Name:</strong> ${bankName}</p>
+                    <p><strong>Account Holder:</strong> ${accountHolder}</p>
+                    <p><strong>Account Number:</strong> ${accountNumber}</p>
+                    <p><strong>Branch Code:</strong> ${branchCode}</p>
+                </div>
+
+                <div class="footer">
+                    <p>Touch Domain (Pty) Ltd</p>
+                    <p>Website: ${process.env.APP_WEBSITE_URL || 'www.touchdomain.co.za'}</p>
+                    <p>&copy; ${new Date().getFullYear()} Touch Domain. All rights reserved.</p>
+                </div>
+            </body>
+            </html>

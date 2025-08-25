@@ -4,12 +4,24 @@
     display: inline-block;
     width: auto;
     font-size: 14px;
-    padding: 10px 10px;
+    padding: 10px 15px;
     background-color: var(--primary-color);
     color: #fff !important;
     border-radius: 20px;
     transition: all 0.3s;
     border: 1.7px solid transparent;
+}
+
+.cta-nav {
+    display: inline-block;
+    width: auto;
+    font-size: 14px;
+    padding: 10px 10px;
+    background-color: transparent;
+    color: var(--secondary-color) !important;
+    border-radius: 20px;
+    transition: all 0.3s;
+    border: 1.7px solid var(--secondary-color);
 }
 
 .cta-primary:hover {
@@ -441,6 +453,150 @@ i:hover {
     transform: translate(-50%, -50%);
 }
 
+/*** Qoute component ***/
+#quote .intro-container {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5rem 5rem 6rem 5rem;
+}
+
+
+#quote h4 {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: block;
+}
+
+#quote hr {
+    color: var(--secondary-color);
+    text-align: center;
+    margin: auto;
+    border-top-width: 2.8px;
+    margin-top: 0.5%;
+    margin-bottom: 0.8rem;
+}
+
+#quote form {
+    width: 100%;
+    text-align: left;
+    padding: 30px
+}
+
+.select-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    column-gap: 8%;
+    margin-left: 3rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#quote .select-group div {
+    width: 20%;
+}
+
+.form-check-label {
+    font-size: 16px;
+    margin-bottom: -1px;
+}
+
+#quote .form-label {
+    font-size: 16px;
+}
+
+#quote .form-select {
+    font-size: 15px;
+    padding: 0 0 4px 0;
+    margin-bottom: 4px;
+}
+
+
+#quote i {
+    background-color: transparent;
+    padding: 0;
+    font-size: 12px;
+    color: #000;
+    cursor: pointer;
+    font-style: normal;
+}
+
+#quote .bi-info-circle::before {
+    padding: 0;
+    color: var(--secondary-color);
+    font-size: 13px;
+}
+
+#quote .description {
+    margin-left: 1.2px;
+}
+
+#quote .form-check {
+    display: inline-block;
+    margin-right: 22px;
+    margin-bottom: 5px;
+    width: auto;
+}
+
+.check-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 3rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.section-descrp {
+    margin-bottom: 1.5rem;
+    font-size: 16px;
+}
+
+.web-quote {
+    width: 100%;
+}
+
+/*** Modal component ***/
+.modal {
+    z-index: 100000;
+}
+
+.modal-dialog {
+    margin-top: 8%;
+}
+
+form#consultationForm {
+    width: auto;
+}
+
+form#orderNowForm {
+    width: auto;
+}
+
+.modal-title {
+    color: var(--primary-color);
+}
+
+#consultationForm .form-label {
+    margin-bottom: 0.2rem;
+}
+
+form#orderNowForm .form-label {
+    margin-bottom: 0.2rem;
+}
+
+#consultationForm input, textarea, select, .form-control, .form-select {
+    padding: 0 0 3px 0;
+    font-size: 15px;
+}
+
+form#orderNowForm input, textarea, select, .form-control, .form-select {
+    padding: 0 0 3px 0;
+    font-size: 15px;
+}
 
 /*** Contact Form  ***/
 form {
@@ -536,7 +692,7 @@ form label {
 
 .menu-mobile {
     position: absolute;
-    top: 5.8rem;
+    top: 4.8rem;
     left: 0;
     width: 100%;
     margin: 0;
